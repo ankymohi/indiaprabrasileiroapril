@@ -1,0 +1,2234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roteiros Índia — Verão Sagrado · Grupo Julho 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; font-size:16px; }
+body {
+  font-family:'Jost', sans-serif;
+  background:#050A0C;
+  color:#EEF4F5;
+  overflow-x:hidden;
+  line-height:1.7;
+}
+img { display:block; max-width:100%; }
+a { text-decoration:none; color:inherit; }
+
+:root {
+  --teal:    #0D7377;
+  --teal2:   #14A9AD;
+  --gold:    #C9930A;
+  --gold2:   #E8B740;
+  --saffron: #E8520A;
+  --saffron2:#F27030;
+  --cream:   #EEF4F5;
+  --muted:   rgba(238,244,245,.65);
+  --ink:     #050A0C;
+  --ink2:    #081215;
+  --border:  rgba(13,115,119,.3);
+}
+
+.serif { font-family:'Cormorant Garamond', Georgia, serif; }
+.eyebrow { font-family:'Jost', sans-serif; font-size:.7rem; font-weight:600; letter-spacing:.4em; text-transform:uppercase; color:var(--teal2); }
+h1,h2,h3,h4 { font-family:'Cormorant Garamond', Georgia, serif; font-weight:700; line-height:1.1; }
+h2 { font-size:clamp(2rem,5vw,3rem); color:var(--cream); }
+h3 { font-size:clamp(1.4rem,3vw,1.9rem); color:var(--cream); }
+p  { color:var(--muted); font-size:.98rem; line-height:1.85; }
+
+.wrap   { max-width:1080px; margin:0 auto; padding:0 1.5rem; }
+.sec    { padding:6rem 1.5rem; max-width:1080px; margin:0 auto; }
+.sec-sm { padding:4rem 1.5rem; max-width:1080px; margin:0 auto; }
+
+.rule {
+  display:flex; align-items:center; gap:1rem;
+  margin-bottom:1.4rem;
+}
+.rule::before, .rule::after { content:''; flex:1; height:1px; background:var(--border); }
+.rule-dot { width:6px; height:6px; border-radius:50%; background:var(--teal2); flex-shrink:0; }
+
+.btn {
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.85rem 2.4rem;
+  background:var(--teal);
+  color:#fff; font-family:'Jost',sans-serif; font-size:.85rem;
+  font-weight:600; letter-spacing:.12em; text-transform:uppercase;
+  border:none; cursor:pointer; border-radius:2px;
+  transition:background .25s, transform .2s;
+}
+.btn:hover { background:var(--teal2); transform:translateY(-2px); }
+.btn-ghost {
+  background:transparent;
+  border:1px solid rgba(238,244,245,.35);
+  color:var(--cream);
+}
+.btn-ghost:hover { background:rgba(238,244,245,.07); transform:translateY(-2px); }
+
+/* ── HERO ── */
+.hero {
+  min-height:100vh;
+  position:relative;
+  display:flex; align-items:center; justify-content:center;
+  text-align:center; overflow:hidden;
+}
+.hero-bg {
+  position:absolute; inset:0;
+  background-image:url('https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=1800&q=85');
+  background-size:cover; background-position:center 40%;
+}
+.hero-overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(to bottom,rgba(5,10,12,.5) 0%,rgba(5,10,12,.4) 50%,rgba(5,10,12,.88) 100%);
+}
+.hero-inner {
+  position:relative; z-index:2;
+  padding:2rem 1.5rem;
+  max-width:860px; width:100%;
+  display:flex; flex-direction:column; align-items:center; gap:1.2rem;
+}
+.hero-logo {
+  width:110px; height:110px;
+  border-radius:50%; object-fit:cover;
+}
+.hero h1 {
+  font-size:clamp(3rem,9vw,7rem);
+  color:#fff;
+  text-shadow:0 2px 24px rgba(5,10,12,.7);
+  letter-spacing:-.01em;
+}
+.hero h1 em {
+  color:var(--teal2); font-style:italic; display:block;
+  font-size:.6em; letter-spacing:.02em;
+}
+.hero-sub {
+  font-size:clamp(.95rem,2.2vw,1.15rem);
+  color:rgba(238,244,245,.85);
+  letter-spacing:.05em;
+}
+.hero-badges {
+  display:flex; flex-wrap:wrap; gap:.6rem; justify-content:center;
+  margin-top:.4rem;
+}
+.hbadge {
+  padding:.38rem 1rem;
+  border:1px solid rgba(13,115,119,.5);
+  border-radius:100px;
+  font-size:.72rem; font-weight:600; letter-spacing:.08em;
+  color:var(--teal2); text-transform:uppercase;
+}
+.hero-cta { margin-top:.6rem; display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; }
+.scroll-cue {
+  position:absolute; bottom:2rem; left:50%; transform:translateX(-50%);
+  z-index:2; display:flex; flex-direction:column; align-items:center; gap:.5rem;
+}
+.scroll-cue span { font-size:.6rem; letter-spacing:.35em; color:var(--teal2); text-transform:uppercase; }
+.scroll-line { width:1px; height:36px; background:linear-gradient(var(--teal2),transparent); }
+
+/* ── ABOUT ── */
+.about-grid {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:4rem; align-items:center;
+}
+.about-img { width:100%; object-fit:cover; border-radius:2px; border:1px solid var(--border); }
+.about-text h2 { margin-bottom:1.2rem; }
+.about-text p  { margin-bottom:1rem; }
+
+/* ── PERIOD BANNER ── */
+.period-banner {
+  position:relative; overflow:hidden;
+  padding:6rem 1.5rem; text-align:center;
+}
+.period-banner-bg {
+  position:absolute; inset:0;
+  background-image:url('https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=1600&q=80');
+  background-size:cover; background-position:center;
+}
+.period-banner-overlay { position:absolute; inset:0; background:rgba(5,10,12,.75); }
+.period-banner-inner { position:relative; z-index:1; max-width:700px; margin:0 auto; }
+.period-banner h2 { font-size:clamp(2rem,6vw,3.6rem); color:#fff; margin-bottom:.8rem; }
+
+/* ── INCLUDES ── */
+.inc-section { position:relative; overflow:hidden; padding:6rem 1.5rem; }
+.inc-section-bg {
+  position:absolute; inset:0;
+  background-image:url('https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=1600&q=80');
+  background-size:cover; background-position:center;
+}
+.inc-section-overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(160deg,rgba(4,9,11,.95) 0%,rgba(8,18,21,.9) 50%,rgba(4,9,11,.94) 100%);
+}
+.inc-section-glow { position:absolute; border-radius:50%; pointer-events:none; filter:blur(80px); opacity:.15; }
+.inc-section-glow.tl { width:400px; height:400px; background:var(--teal); top:-100px; left:-100px; }
+.inc-section-glow.br { width:350px; height:350px; background:var(--gold); bottom:-80px; right:-80px; }
+.inc-section-inner { position:relative; z-index:2; max-width:1080px; margin:0 auto; }
+
+/* ── HINDU ORNAMENT ROWS (replaces diya rows) ── */
+.om-row { display:flex; justify-content:center; align-items:center; gap:clamp(.8rem,3vw,2rem); margin:0 0 2.5rem; flex-wrap:wrap; }
+.om-row.btm { margin:2.5rem 0 0; }
+.om-symbol {
+  font-size:1.1rem; color:var(--teal2);
+  opacity:.65; flex-shrink:0;
+  text-shadow:0 0 12px rgba(20,169,173,.5);
+  animation:omPulse 3s ease-in-out infinite;
+  animation-delay:var(--d,0s);
+  user-select:none;
+}
+.om-symbol.large { font-size:1.5rem; opacity:.9; }
+.om-symbol.gold  { color:var(--gold2); text-shadow:0 0 12px rgba(232,183,64,.4); }
+@keyframes omPulse { 0%,100%{opacity:.45;transform:scale(1)} 50%{opacity:.9;transform:scale(1.1)} }
+
+/* ── GANGES / VARANASI ornament rows ── */
+.ganges-ornament-row { display:flex; justify-content:center; align-items:center; gap:clamp(.7rem,2.5vw,1.8rem); flex-wrap:wrap; }
+
+.inc-grid {
+  display:grid; grid-template-columns:repeat(4,1fr);
+  gap:3px; margin-top:2rem;
+}
+.inc-item {
+  position:relative; min-height:260px; overflow:hidden;
+  border-radius:2px; display:flex; flex-direction:column; justify-content:flex-end;
+  cursor:default;
+}
+.inc-item-bg {
+  position:absolute; inset:0;
+  background-size:cover; background-position:center;
+  transition:transform .55s ease, filter .55s ease;
+  filter:brightness(.55) saturate(.9);
+}
+.inc-item:hover .inc-item-bg { transform:scale(1.07); filter:brightness(.45) saturate(1.1); }
+.inc-item-overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(to top,rgba(4,9,11,.92) 0%,rgba(4,9,11,.55) 45%,rgba(4,9,11,.1) 100%);
+  transition:background .4s;
+}
+.inc-item:hover .inc-item-overlay {
+  background:linear-gradient(to top,rgba(4,9,11,.96) 0%,rgba(13,115,119,.18) 55%,rgba(4,9,11,.25) 100%);
+}
+.inc-item::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg,var(--teal),var(--gold));
+  z-index:2; transform:scaleX(0); transform-origin:left; transition:transform .4s ease;
+}
+.inc-item:hover::before { transform:scaleX(1); }
+.inc-item-content { position:relative; z-index:2; padding:1.4rem 1.3rem 1.5rem; display:flex; flex-direction:column; gap:.5rem; }
+.inc-item-icon {
+  display:flex; align-items:center; justify-content:center;
+  width:38px; height:38px; border-radius:50%;
+  background:rgba(13,115,119,.2); border:1px solid rgba(13,115,119,.35);
+  margin-bottom:.3rem; transition:background .3s;
+}
+.inc-item:hover .inc-item-icon { background:rgba(13,115,119,.35); }
+.inc-item-icon i { font-size:1.1rem; color:var(--teal2); }
+.inc-item h4 { font-family:'Jost',sans-serif; font-size:.78rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#fff; line-height:1.3; }
+.inc-item p { font-size:.8rem; margin:0; color:rgba(238,244,245,.72); line-height:1.65; }
+.inc-item p strong { color:var(--teal2); }
+
+@media(max-width:900px){ .inc-grid { grid-template-columns:repeat(2,1fr); } .inc-item { min-height:220px; } }
+@media(max-width:480px){ .inc-grid { grid-template-columns:1fr 1fr; gap:2px; } .inc-item { min-height:190px; } }
+
+/* ── PHOTO STRIP ── */
+.photo-strip {
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  grid-template-rows:260px 260px;
+  gap:4px;
+}
+.ps { position:relative; overflow:hidden; }
+.ps img { width:100%; height:100%; object-fit:cover; transition:transform .6s; }
+.ps:hover img { transform:scale(1.04); }
+.ps-cap {
+  position:absolute; bottom:0; left:0; right:0;
+  background:linear-gradient(transparent,rgba(5,10,12,.85));
+  padding:2rem .8rem .7rem;
+  font-size:.65rem; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--teal2); font-weight:600;
+}
+.ps1 { grid-column:1; grid-row:1/3; }
+.ps2 { grid-column:2; grid-row:1; }
+.ps3 { grid-column:3; grid-row:1; }
+.ps4 { grid-column:2; grid-row:2; }
+.ps5 { grid-column:3; grid-row:2; }
+
+/* ── HOTELS ── */
+.hotel-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:2rem; margin-top:2.5rem; }
+
+.hotel-card {
+  border:1px solid var(--border); border-radius:4px;
+  overflow:hidden; transition:border-color .3s, box-shadow .3s;
+  background:var(--ink2);
+}
+.hotel-card:hover {
+  border-color:rgba(13,115,119,.55);
+  box-shadow:0 8px 36px rgba(0,0,0,.45), 0 0 20px rgba(13,115,119,.08);
+}
+
+/* Photo strip scroll */
+.hotel-photos {
+  position:relative;
+  overflow:hidden;
+}
+.hotel-photo-track {
+  display:flex;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+  cursor:grab;
+  user-select:none;
+}
+.hotel-photo-track::-webkit-scrollbar { display:none; }
+.hotel-photo-track.is-dragging { cursor:grabbing; }
+.hotel-photo-slide {
+  flex:0 0 100%;
+  scroll-snap-align:start;
+  position:relative;
+}
+.hotel-photo-slide img {
+  width:100%; height:220px;
+  object-fit:cover; display:block;
+  pointer-events:none;
+  transition:filter .3s;
+}
+.hotel-card:hover .hotel-photo-slide img { filter:brightness(.95); }
+
+/* Arrow buttons */
+.hotel-arrow {
+  position:absolute; top:50%; transform:translateY(-50%);
+  z-index:3; width:32px; height:32px; border-radius:50%;
+  background:rgba(5,10,12,.72); border:1px solid rgba(20,169,173,.35);
+  color:var(--teal2); font-size:.9rem;
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer; transition:background .2s, border-color .2s;
+  backdrop-filter:blur(4px);
+}
+.hotel-arrow:hover { background:rgba(13,115,119,.6); border-color:rgba(20,169,173,.7); }
+.hotel-arrow.prev { left:.6rem; }
+.hotel-arrow.next { right:.6rem; }
+
+/* Dot indicators */
+.hotel-dots {
+  position:absolute; bottom:.6rem; left:50%; transform:translateX(-50%);
+  display:flex; gap:.4rem; z-index:3;
+}
+.hotel-dot {
+  width:6px; height:6px; border-radius:50%;
+  background:rgba(238,244,245,.35);
+  transition:background .25s, transform .25s;
+  cursor:pointer;
+}
+.hotel-dot.active {
+  background:var(--teal2);
+  transform:scale(1.3);
+}
+
+/* Photo counter badge */
+.hotel-photo-count {
+  position:absolute; top:.6rem; right:.6rem; z-index:3;
+  background:rgba(5,10,12,.75); border:1px solid rgba(20,169,173,.3);
+  border-radius:100px; padding:.18rem .6rem;
+  font-family:'Jost',sans-serif; font-size:.6rem; font-weight:600;
+  letter-spacing:.08em; color:var(--teal2);
+  backdrop-filter:blur(4px);
+}
+
+/* Hotel info */
+.hotel-info { padding:1.3rem 1.4rem 1.5rem; }
+.hotel-info .stars { color:var(--teal2); font-size:.75rem; margin-bottom:.4rem; letter-spacing:.1em; }
+.hotel-info h4 {
+  font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-weight:700;
+  color:var(--cream); margin-bottom:.4rem; line-height:1.2;
+}
+.hotel-info p { font-size:.83rem; }
+.hotel-amenities {
+  display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.9rem;
+}
+.hotel-amenity {
+  font-family:'Jost',sans-serif; font-size:.6rem; font-weight:600;
+  letter-spacing:.08em; text-transform:uppercase;
+  padding:.22rem .65rem; border-radius:100px;
+  background:rgba(13,115,119,.1); border:1px solid rgba(13,115,119,.25);
+  color:var(--teal2);
+}
+
+/* ── TRAIN HIGHLIGHT ── */
+.train-banner {
+  position:relative; overflow:hidden;
+  padding:5rem 1.5rem; text-align:center;
+}
+.train-banner-bg {
+  position:absolute; inset:0;
+  background-image:url('http://getwallpapers.com/wallpaper/full/9/1/d/364210.jpg');
+  background-size:cover; background-position:center;
+}
+.train-banner-overlay { position:absolute; inset:0; background:rgba(5,10,12,.78); }
+.train-banner-inner { position:relative; z-index:1; max-width:700px; margin:0 auto; }
+.train-banner h2 { font-size:clamp(1.8rem,5vw,3rem); color:#fff; margin-bottom:.8rem; }
+.train-badge {
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.45rem 1.2rem; background:rgba(13,115,119,.2);
+  border:1px solid rgba(13,115,119,.5); border-radius:2px;
+  font-size:.75rem; font-weight:700; letter-spacing:.15em;
+  color:var(--teal2); text-transform:uppercase; margin-bottom:1rem;
+}
+
+/* ── ITINERARY ── */
+.itinerary { display:flex; flex-direction:column; gap:0; }
+.day-section { position:relative; overflow:hidden; min-height:520px; display:flex; align-items:center; }
+.day-bg { position:absolute; inset:0; background-size:cover; background-position:center; }
+.day-overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(to right, rgba(5,10,12,.92) 0%, rgba(5,10,12,.75) 55%, rgba(5,10,12,.3) 100%);
+}
+.day-inner {
+  position:relative; z-index:2;
+  max-width:1080px; width:100%; margin:0 auto;
+  padding:4rem 1.5rem;
+  display:grid; grid-template-columns:1fr 2fr; gap:3rem; align-items:start;
+}
+.day-meta { display:flex; flex-direction:column; gap:.6rem; }
+.day-tag {
+  display:inline-block; padding:.3rem .9rem;
+  border:1px solid var(--border); border-radius:100px;
+  font-size:.65rem; letter-spacing:.3em; font-weight:600;
+  color:var(--teal2); text-transform:uppercase;
+}
+.day-tag.special { background:rgba(13,115,119,.2); border-color:rgba(13,115,119,.5); color:var(--teal2); }
+.day-tag.train-tag { background:rgba(201,147,10,.15); border-color:rgba(201,147,10,.4); color:var(--gold2); }
+.day-num-big {
+  font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:700; line-height:1;
+  color:rgba(238,244,245,.12); letter-spacing:-.03em;
+}
+.day-title-sm { font-family:'Jost',sans-serif; font-size:.72rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--teal2); }
+.day-content-side h3 { margin-bottom:1.2rem; font-size:clamp(1.3rem,3vw,1.8rem); }
+.day-block { margin-bottom:1.4rem; }
+.day-block-label { font-family:'Jost',sans-serif; font-size:.65rem; font-weight:700; letter-spacing:.25em; text-transform:uppercase; color:var(--teal2); margin-bottom:.5rem; display:block; }
+.day-block ul { list-style:none; padding:0; }
+.day-block ul li { font-size:.92rem; color:rgba(238,244,245,.78); padding:.2rem 0 .2rem 1.1rem; position:relative; line-height:1.75; }
+.day-block ul li::before { content:'—'; position:absolute; left:0; color:var(--teal); font-size:.7rem; top:.35rem; }
+.day-block ul li strong { color:var(--teal2); }
+.night-note { margin-top:1.2rem; font-size:.82rem; color:rgba(13,115,119,.9); font-style:italic; }
+
+.day-section.is-special .day-overlay {
+  background:linear-gradient(to right,rgba(5,10,12,.95) 0%,rgba(0,20,25,.8) 55%,rgba(5,10,12,.4) 100%);
+}
+.day-section.is-train .day-overlay {
+  background:linear-gradient(to right,rgba(5,10,12,.95) 0%,rgba(10,25,10,.8) 55%,rgba(5,10,12,.4) 100%);
+}
+.special-badge {
+  display:inline-flex; align-items:center; gap:.4rem;
+  padding:.4rem 1rem; background:rgba(13,115,119,.15);
+  border:1px solid rgba(13,115,119,.4); border-radius:2px;
+  font-size:.72rem; font-weight:700; letter-spacing:.15em;
+  color:var(--teal2); text-transform:uppercase; margin-bottom:1rem;
+}
+.train-journey-badge {
+  display:inline-flex; align-items:center; gap:.4rem;
+  padding:.4rem 1rem; background:rgba(201,147,10,.12);
+  border:1px solid rgba(201,147,10,.35); border-radius:2px;
+  font-size:.72rem; font-weight:700; letter-spacing:.15em;
+  color:var(--gold2); text-transform:uppercase; margin-bottom:1rem;
+}
+
+/* ── VARANASI HIGHLIGHT ── */
+.varanasi-hl {
+  position:relative; overflow:hidden;
+  min-height:520px; display:flex; align-items:center; justify-content:center;
+  text-align:center; padding:6rem 1.5rem;
+}
+.varanasi-hl-bg {
+  position:absolute; inset:0;
+  background-image:url('https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=1800&q=85');
+  background-size:cover; background-position:center;
+}
+.varanasi-hl-overlay { position:absolute; inset:0; background:rgba(5,10,12,.74); }
+.varanasi-hl-inner { position:relative; z-index:2; max-width:720px; padding:0 1rem; }
+.varanasi-hl-inner .eyebrow { color:var(--teal2); margin-bottom:.8rem; display:block; }
+.varanasi-hl-inner h2 { font-size:clamp(2rem,5vw,3.4rem); color:#fff; margin-bottom:1.2rem; text-shadow:0 2px 20px rgba(13,115,119,.5); }
+.varanasi-hl-inner p { font-size:1.05rem; color:rgba(238,244,245,.88); max-width:600px; margin:0 auto; }
+.hl-divider { width:120px; height:1px; margin:1.2rem auto; background:linear-gradient(90deg,transparent,var(--teal2),transparent); }
+.hl-icons { font-size:2.2rem; display:block; margin-bottom:1rem; letter-spacing:.5rem; }
+
+/* ── FOOD ── */
+.food-section { padding:6rem 1.5rem; max-width:1080px; margin:0 auto; }
+.food-grid {
+  display:grid; grid-template-columns:repeat(4,1fr);
+  grid-template-rows:240px 200px; gap:6px; margin-top:2.5rem;
+}
+.food-item { position:relative; overflow:hidden; border-radius:2px; }
+.food-item img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .6s; }
+.food-item:hover img { transform:scale(1.06); }
+.food-item.large { grid-column:1/3; grid-row:1/3; }
+.food-item.tall { grid-row:1/3; }
+.food-cap {
+  position:absolute; bottom:0; left:0; right:0;
+  background:linear-gradient(transparent,rgba(4,9,11,.88));
+  padding:2rem .9rem .8rem;
+  font-family:'Cormorant Garamond',serif;
+  font-size:1rem; font-weight:700; color:var(--cream);
+}
+.food-cap small { display:block; font-family:'Jost',sans-serif; font-size:.6rem; letter-spacing:.2em; text-transform:uppercase; color:var(--teal2); margin-bottom:.2rem; }
+
+/* ── TESTIMONIAL ── */
+.testimonial-section { position:relative; overflow:hidden; background:var(--ink2); }
+.test-layout { display:grid; grid-template-columns:1fr 1fr; min-height:560px; }
+.test-photos { position:relative; overflow:hidden; }
+.test-photos-grid { display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; height:100%; }
+.test-photo { overflow:hidden; position:relative; }
+.test-photo img { width:100%; height:100%; object-fit:cover; display:block; filter:brightness(.8); transition:filter .4s; }
+.test-photo:hover img { filter:brightness(1); }
+.test-photo-overlay { position:absolute; inset:0; background:linear-gradient(135deg,rgba(5,10,12,.3),transparent); }
+.test-photo.main { grid-row:1/3; grid-column:1; }
+.test-content {
+  padding:4rem 3.5rem; display:flex; flex-direction:column; justify-content:center;
+  border-left:1px solid var(--border);
+}
+.test-quote-mark { font-family:'Cormorant Garamond',serif; font-size:6rem; line-height:.7; color:var(--teal); display:block; margin-bottom:.8rem; }
+blockquote { font-family:'Cormorant Garamond',serif; font-size:clamp(1.15rem,2.5vw,1.5rem); font-style:italic; color:var(--cream); line-height:1.7; margin-bottom:1.8rem; }
+.test-divider { width:48px; height:2px; background:var(--teal); margin-bottom:1.2rem; }
+.test-name { font-family:'Jost',sans-serif; font-size:.9rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--teal2); }
+.test-role { font-size:.8rem; color:rgba(238,244,245,.45); margin-top:.3rem; }
+.test-countries { display:flex; gap:.5rem; flex-wrap:wrap; margin-top:1.4rem; }
+.flag-pill {
+  display:inline-flex; align-items:center; gap:.4rem;
+  background:rgba(255,255,255,.05); border:1px solid var(--border);
+  padding:.28rem .7rem; border-radius:100px; font-size:.72rem; color:rgba(238,244,245,.7);
+}
+
+@media(max-width:760px){
+  .test-layout { grid-template-columns:1fr; }
+  .test-photos { min-height:300px; }
+  .test-content { padding:2.5rem 1.5rem; border-left:none; border-top:1px solid var(--border); }
+  .food-grid { grid-template-columns:1fr 1fr; grid-template-rows:200px 160px 160px; }
+  .food-item.large { grid-column:1/3; grid-row:1; }
+  .food-item.tall { grid-row:auto; }
+  .hotel-grid { grid-template-columns:1fr 1fr; }
+}
+
+/* ── PRICING ── */
+.pricing-wrap { border:1px solid var(--border); border-radius:2px; max-width:700px; margin:0 auto; overflow:hidden; }
+.pricing-head { background:var(--teal); padding:1.4rem 2rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+.pricing-head h3 { font-size:1.1rem; color:#fff; margin:0; }
+.pricing-head span { font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.8); }
+.pricing-body { padding:2.5rem 2rem; }
+.price-display { display:flex; align-items:baseline; gap:.5rem; margin-bottom:.5rem; }
+.price-currency { font-family:'Jost',sans-serif; font-size:1.4rem; font-weight:700; color:var(--teal2); }
+.price-amount { font-family:'Cormorant Garamond',serif; font-size:4.5rem; font-weight:700; color:var(--cream); line-height:1; }
+.price-period { font-size:.85rem; color:var(--muted); }
+.price-note { font-size:.85rem; color:var(--muted); margin-bottom:2rem; }
+
+.steps-row { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin:2rem 0; }
+.step-item { border-left:2px solid var(--border); padding-left:1rem; }
+.step-n { font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:700; color:var(--teal); line-height:1; }
+.step-item h4 { font-family:'Jost',sans-serif; font-size:.78rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--cream); margin:.3rem 0; }
+.step-item p { font-size:.82rem; }
+.step-item ul { list-style:none; padding:0; }
+.step-item ul li { font-size:.82rem; color:var(--muted); padding:.1rem 0 .1rem .9rem; position:relative; }
+.step-item ul li::before { content:'✓'; position:absolute; left:0; color:var(--teal); font-size:.7rem; top:.15rem; }
+
+.deposit-row {
+  background:rgba(13,115,119,.07); border:1px solid var(--border); border-radius:2px;
+  padding:1.4rem 1.6rem; display:flex; align-items:center; justify-content:space-between;
+  flex-wrap:wrap; gap:1rem; margin:1.5rem 0;
+}
+.deposit-lbl h4 { font-family:'Jost',sans-serif; font-size:.72rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--teal2); }
+.deposit-lbl p { font-size:.82rem; margin:.1rem 0 0; }
+.deposit-amt { font-family:'Cormorant Garamond',serif; font-size:2.4rem; font-weight:700; color:var(--cream); }
+
+.seats-row { display:flex; align-items:center; gap:1.2rem; flex-wrap:wrap; margin:1.5rem 0; }
+.seats-dots { display:flex; gap:.4rem; }
+.seat { width:16px; height:16px; border-radius:50%; background:var(--teal); }
+.seat.open { background:transparent; border:1.5px solid rgba(238,244,245,.3); }
+.seats-note { font-size:.8rem; color:var(--muted); }
+
+/* ── WHY ── */
+.why-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1.5rem; margin-top:2.5rem; }
+.why-item { display:flex; flex-direction:column; gap:.7rem; }
+.why-item h4 { font-family:'Jost',sans-serif; font-size:.82rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--cream); }
+.why-item p { font-size:.88rem; }
+
+/* ── CULTURE ── */
+.culture-section { padding:6rem 1.5rem; max-width:1080px; margin:0 auto; }
+.culture-grid { display:grid; grid-template-columns:repeat(3,1fr); grid-template-rows:280px 220px; gap:6px; margin-top:2.5rem; }
+.culture-item { position:relative; overflow:hidden; border-radius:2px; }
+.culture-item img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .65s; filter:brightness(.85); }
+.culture-item:hover img { transform:scale(1.06); filter:brightness(1); }
+.culture-item.wide { grid-column:1/3; }
+.culture-item.tall { grid-row:1/3; }
+.culture-cap { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent,rgba(4,9,11,.9)); padding:2.5rem 1rem .9rem; }
+.culture-cap h4 { font-family:'Cormorant Garamond',serif; font-size:1.05rem; font-weight:700; color:var(--cream); margin-bottom:.1rem; }
+.culture-cap small { font-family:'Jost',sans-serif; font-size:.6rem; letter-spacing:.22em; text-transform:uppercase; color:var(--teal2); }
+.culture-tag { position:absolute; top:.8rem; left:.8rem; background:rgba(4,9,11,.7); border:1px solid var(--border); padding:.22rem .65rem; border-radius:100px; font-family:'Jost',sans-serif; font-size:.58rem; letter-spacing:.18em; text-transform:uppercase; color:var(--teal2); }
+
+/* ── CONTACT ── */
+.contact-section { position:relative; overflow:hidden; padding:6rem 1.5rem; background:var(--ink2); border-top:1px solid var(--border); }
+.contact-inner { max-width:1080px; margin:0 auto; }
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-top:2.5rem; }
+.contact-card { border:1px solid var(--border); border-radius:2px; padding:2rem; position:relative; overflow:hidden; transition:border-color .25s; }
+.contact-card:hover { border-color:rgba(13,115,119,.45); }
+.contact-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--teal),var(--gold)); }
+.contact-card-flag { font-size:2rem; display:block; margin-bottom:.8rem; }
+.contact-card-name { font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:700; color:var(--cream); margin-bottom:.2rem; }
+.contact-card-role { font-size:.72rem; font-weight:600; letter-spacing:.15em; text-transform:uppercase; color:var(--teal2); margin-bottom:1.2rem; display:block; }
+.contact-card-detail { display:flex; align-items:center; gap:.6rem; font-size:.88rem; color:var(--muted); margin-bottom:.5rem; }
+.contact-card-detail i { color:var(--teal); font-size:1rem; flex-shrink:0; }
+.wa-btn {
+  display:inline-flex; align-items:center; gap:.6rem; margin-top:1.4rem;
+  padding:.75rem 1.6rem; background:#25D366; color:#fff; border-radius:2px;
+  font-family:'Jost',sans-serif; font-size:.82rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+  text-decoration:none; transition:background .25s, transform .2s;
+}
+.wa-btn:hover { background:#1ebe5d; transform:translateY(-2px); }
+.wa-btn svg { width:18px; height:18px; fill:#fff; flex-shrink:0; }
+
+/* ── FOOTER ── */
+footer { border-top:1px solid var(--border); background:rgba(0,0,0,.6); padding:4rem 1.5rem 3rem; }
+.footer-inner { max-width:1080px; margin:0 auto; display:grid; grid-template-columns:1fr auto; gap:3rem; align-items:start; }
+.footer-left { display:flex; flex-direction:column; gap:.6rem; }
+.footer-logo { width:74px; height:74px; border-radius:50%; object-fit:cover; }
+.footer-brand { font-family:'Cormorant Garamond',serif; font-size:1.4rem; font-weight:700; letter-spacing:.2em; color:var(--teal2); }
+.footer-tagline { font-style:italic; color:var(--teal); font-size:.88rem; }
+.footer-meta { font-size:.75rem; color:rgba(238,244,245,.3); line-height:1.8; }
+.footer-contacts { display:flex; flex-direction:column; gap:.5rem; }
+.footer-contact-item { display:flex; align-items:center; gap:.5rem; font-size:.8rem; color:rgba(238,244,245,.5); }
+.footer-contact-item i { color:var(--teal); font-size:.9rem; }
+.footer-bottom { max-width:1080px; margin:2rem auto 0; border-top:1px solid rgba(255,255,255,.05); padding-top:1.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+.footer-bottom p { font-size:.72rem; color:rgba(238,244,245,.25); }
+
+@media(max-width:860px){
+  .about-grid { grid-template-columns:1fr; gap:2rem; }
+  .day-inner { grid-template-columns:1fr; gap:1.5rem; }
+  .photo-strip { grid-template-columns:1fr 1fr; grid-template-rows:200px 200px 200px; }
+  .ps1 { grid-column:1/3; grid-row:1; } .ps2 { grid-column:1; grid-row:2; } .ps3 { grid-column:2; grid-row:2; } .ps4 { grid-column:1; grid-row:3; } .ps5 { grid-column:2; grid-row:3; }
+  .hotel-grid { grid-template-columns:1fr 1fr; }
+  .contact-grid { grid-template-columns:1fr; }
+  .footer-bottom { flex-direction:column; }
+  .test-layout { grid-template-columns:1fr; }
+  .test-photos { min-height:300px; }
+  .test-content { padding:2.5rem 1.5rem; border-left:none; border-top:1px solid var(--border); }
+  .food-grid { grid-template-columns:1fr 1fr; grid-template-rows:200px 160px 160px; }
+  .food-item.large { grid-column:1/3; grid-row:1; }
+  .food-item.tall { grid-row:auto; }
+}
+@media(max-width:560px){
+  .hero h1 { font-size:3rem; }
+  .day-section { min-height:auto; }
+  .day-overlay { background:rgba(5,10,12,.88) !important; }
+  .pricing-body { padding:1.5rem; }
+  .hotel-grid { grid-template-columns:1fr; }
+  .hero-cta { flex-direction:column; align-items:center; }
+  .hero-cta .btn { width:100%; max-width:280px; justify-content:center; }
+  .gate-phone-row { grid-template-columns:76px 1fr; }
+}
+
+@media(max-width:480px){
+  .sec-sm { padding:2.5rem 1rem; }
+  .wrap { padding:0 1rem; }
+  .hero h1 { font-size:2.6rem; }
+  .hero-sub { font-size:.85rem; }
+  .hbadge { font-size:.62rem; padding:.3rem .7rem; }
+  .hero-cta { gap:.6rem; }
+  .hero-cta .btn { padding:.75rem 1.4rem; font-size:.75rem; letter-spacing:.08em; }
+  .about-grid { grid-template-columns:1fr; gap:1.5rem; }
+  .period-banner { padding:3.5rem 1rem; }
+  .period-banner h2 { font-size:1.7rem; }
+  .train-banner { padding:3rem 1rem; }
+  .train-banner h2 { font-size:1.5rem; }
+  .inc-grid { grid-template-columns:1fr 1fr; gap:2px; }
+  .inc-item { min-height:170px; }
+  .inc-item-content { padding:.9rem; }
+  .inc-item h4 { font-size:.68rem; }
+  .inc-item p { font-size:.72rem; }
+  .photo-strip { grid-template-columns:1fr; grid-template-rows:240px 180px 180px 180px 180px; }
+  .ps1,.ps2,.ps3,.ps4,.ps5 { grid-column:1; grid-row:auto; }
+  .hotel-grid { grid-template-columns:1fr; gap:1rem; }
+  .hotel-photo-slide img { height:180px; }
+  .day-section { min-height:auto; }
+  .day-inner { padding:2.5rem 1rem; grid-template-columns:1fr; gap:1rem; }
+  .day-overlay { background:rgba(5,10,12,.9) !important; }
+  .day-num-big { font-size:1.6rem; }
+  .day-block ul li { font-size:.84rem; }
+  .food-grid { grid-template-columns:1fr 1fr; grid-template-rows:180px 150px 150px; }
+  .food-item.large { grid-column:1/3; grid-row:1; }
+  .food-item.tall { grid-row:auto; }
+  .test-layout { grid-template-columns:1fr; }
+  .test-photos { min-height:260px; }
+  .test-content { padding:2rem 1rem; border-left:none; border-top:1px solid var(--border); }
+  .test-quote-mark { font-size:4rem; }
+  blockquote { font-size:1rem; }
+  .culture-grid { grid-template-columns:1fr 1fr; grid-template-rows:180px 150px 150px; }
+  .culture-item.wide { grid-column:1/3; grid-row:1; }
+  .culture-item.tall { grid-row:auto; }
+  .pricing-body { padding:1.2rem 1rem; }
+  .price-amount { font-size:3.2rem; }
+  .steps-row { grid-template-columns:1fr; gap:1rem; }
+  .deposit-row { flex-direction:column; gap:.6rem; }
+  .deposit-amt { font-size:2rem; }
+  .why-grid { grid-template-columns:1fr 1fr; gap:1.2rem; }
+  .contact-grid { grid-template-columns:1fr; }
+  .footer-inner { grid-template-columns:1fr; gap:2rem; }
+  .footer-bottom { flex-direction:column; text-align:center; }
+  .varanasi-hl { padding:4rem 1rem; }
+  .varanasi-hl-inner h2 { font-size:1.7rem; }
+  .om-row { gap:.6rem; }
+  .om-symbol { font-size:.85rem; }
+  .gate-body { padding:.8rem 1rem 1.4rem; }
+  .gate-title { font-size:1.4rem; }
+  h2 { font-size:1.7rem; }
+}
+
+@media(max-width:360px){
+  .hero h1 { font-size:2.2rem; }
+  .inc-grid { grid-template-columns:1fr; }
+  .inc-item { min-height:200px; }
+  .food-grid { grid-template-columns:1fr; grid-template-rows:repeat(5,180px); }
+  .food-item.large { grid-column:1; grid-row:1; }
+}
+
+/* ── PDF / PRINT STYLES ── */
+@media print {
+  * { -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important; color-adjust:exact !important; }
+  body { background:#050A0C !important; color:#EEF4F5 !important; font-size:11pt; }
+  
+  /* Hide interactive / non-content elements */
+  #lead-gate, .scroll-cue, .hero-cta, .btn, .wa-btn,
+  .inc-section-glow, script { display:none !important; }
+  
+  /* Page breaks */
+  .day-section { page-break-inside:avoid; min-height:auto !important; }
+  .day-section:nth-child(3n) { page-break-after:always; }
+  .inc-section, .food-section, .culture-section { page-break-inside:avoid; }
+  .hotel-grid, .steps-row, .contact-grid { page-break-inside:avoid; }
+  
+  /* Fix layouts for print */
+  .hero { min-height:400px !important; page-break-after:always; }
+  .hero-bg { background-attachment:scroll !important; }
+  .day-overlay, .period-banner-overlay, .train-banner-overlay,
+  .varanasi-hl-overlay, .inc-section-overlay { opacity:1 !important; }
+  
+  /* Collapse full-bleed photo-only sections */
+  .photo-strip { grid-template-columns:repeat(3,1fr) !important; grid-template-rows:160px !important; }
+  .ps1 { grid-column:1 !important; grid-row:1 !important; }
+  .ps2 { grid-column:2 !important; grid-row:1 !important; }
+  .ps3 { grid-column:3 !important; grid-row:1 !important; }
+  .ps4,.ps5 { display:none !important; }
+  
+  /* Grids: 2-col on print */
+  .inc-grid { grid-template-columns:repeat(3,1fr) !important; gap:4px !important; }
+  .hotel-grid { grid-template-columns:repeat(2,1fr) !important; }
+  .hotel-arrow, .hotel-dots, .hotel-photo-count { display:none !important; }
+  .hotel-photo-track { overflow:visible !important; }
+  .hotel-photo-slide:not(:first-child) { display:none !important; }
+  .hotel-photo-slide img { height:160px !important; }
+  .culture-grid { grid-template-columns:repeat(3,1fr) !important; grid-template-rows:160px 130px !important; }
+  .food-grid { grid-template-columns:repeat(2,1fr) !important; grid-template-rows:160px 130px !important; }
+  .food-item.large { grid-column:1/3 !important; grid-row:1 !important; }
+  .food-item.tall { grid-row:auto !important; }
+  
+  /* Test layout for print */
+  .test-layout { grid-template-columns:1fr 1fr !important; }
+  .test-photos { min-height:300px !important; }
+  
+  /* Day sections on print */
+  .day-inner { grid-template-columns:160px 1fr !important; padding:2rem 1rem !important; }
+  .day-bg { filter:brightness(.4) !important; }
+  
+  /* Pricing */
+  .pricing-wrap { max-width:100% !important; }
+  
+  /* Varanasi */
+  .varanasi-hl { min-height:320px !important; padding:3rem 1rem !important; }
+  
+  /* Footer */
+  footer { page-break-before:always; }
+  .footer-inner { grid-template-columns:1fr 1fr !important; }
+}
+</style>
+
+<!-- GATE STYLES -->
+<style>
+body.gate-active { overflow:hidden !important; }
+#page-content { transition:filter .4s ease, opacity .4s ease; }
+body.gate-active #page-content { filter:blur(6px) brightness(.3); pointer-events:none; user-select:none; }
+#lead-gate { position:fixed; inset:0; z-index:99999; display:none; align-items:center; justify-content:center; padding:1rem; backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); }
+@keyframes gateIn { from{opacity:0} to{opacity:1} }
+#lead-gate.gate-hiding { animation:gateOut .45s ease forwards; }
+@keyframes gateOut { to{opacity:0} }
+#lead-modal {
+  position:relative; width:100%; max-width:520px;
+  background:linear-gradient(155deg,#001a1e 0%,#000d10 60%,#001520 100%);
+  border:1px solid rgba(13,115,119,.4); border-radius:4px;
+  overflow:hidden; max-height:95vh; overflow-y:auto;
+  animation:modalUp .55s cubic-bezier(.16,1,.3,1);
+  box-shadow:0 0 0 1px rgba(20,169,173,.07), 0 40px 100px rgba(0,0,0,.75), 0 0 80px rgba(13,115,119,.12);
+}
+@keyframes modalUp { from{opacity:0;transform:translateY(36px) scale(.96)} to{opacity:1;transform:translateY(0) scale(1)} }
+#lead-modal::-webkit-scrollbar{width:4px} #lead-modal::-webkit-scrollbar-thumb{background:rgba(13,115,119,.3);border-radius:2px}
+.gate-bar { height:3px; background:linear-gradient(90deg,#0D7377,#E8B740,#0D7377,#14A9AD); background-size:300% 100%; animation:barShift 3s linear infinite; }
+@keyframes barShift { to{background-position:300% 0} }
+.gate-om-row { display:flex; justify-content:center; gap:clamp(.5rem,2vw,1.2rem); padding:1rem 1.5rem .3rem; flex-wrap:wrap; }
+.gate-om { font-size:.95rem; color:var(--teal2); opacity:.7; animation:omPulse 2.8s ease-in-out infinite; animation-delay:var(--d,0s); user-select:none; }
+.gate-om.gold { color:var(--gold2); }
+.gate-body { padding:1.2rem 2rem 2rem; }
+@media(max-width:420px){ .gate-body{padding:1rem 1.3rem 1.6rem} }
+.gate-eyebrow { font-family:'Jost',sans-serif; font-size:.65rem; font-weight:700; letter-spacing:.38em; text-transform:uppercase; color:var(--teal2); display:block; text-align:center; margin-bottom:.75rem; }
+.gate-rule { display:flex; align-items:center; gap:.7rem; margin-bottom:.9rem; }
+.gate-rule::before,.gate-rule::after { content:''; flex:1; height:1px; background:rgba(13,115,119,.25); }
+.gate-rule-dot { width:5px; height:5px; border-radius:50%; background:var(--teal); flex-shrink:0; }
+.gate-title { font-family:'Cormorant Garamond',serif; font-size:clamp(1.55rem,4.5vw,2.1rem); font-weight:700; color:var(--cream); text-align:center; line-height:1.15; margin-bottom:.4rem; }
+.gate-title em { font-style:italic; color:var(--teal2); }
+.gate-ornament { text-align:center; font-family:'Cormorant Garamond',serif; font-size:.85rem; color:rgba(13,115,119,.25); letter-spacing:.6rem; margin:.4rem 0 .9rem; }
+.gate-sub { font-family:'Jost',sans-serif; font-size:.83rem; color:rgba(238,244,245,.6); text-align:center; line-height:1.7; margin-bottom:1.3rem; }
+.gate-badges { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center; margin-bottom:1.4rem; }
+.gate-badge { padding:.26rem .7rem; border:1px solid rgba(13,115,119,.3); border-radius:100px; font-family:'Jost',sans-serif; font-size:.62rem; font-weight:600; letter-spacing:.07em; text-transform:uppercase; color:var(--teal2); background:rgba(13,115,119,.07); }
+.gate-form { display:flex; flex-direction:column; gap:.9rem; }
+.gate-flabel { display:block; font-family:'Jost',sans-serif; font-size:.62rem; font-weight:700; letter-spacing:.22em; text-transform:uppercase; color:var(--teal2); margin-bottom:.35rem; }
+.gate-fwrap { position:relative; }
+.gate-ficon { position:absolute; left:.85rem; top:50%; transform:translateY(-50%); width:15px; height:15px; fill:var(--teal2); opacity:.55; pointer-events:none; }
+.gate-finput { width:100%; background:rgba(255,255,255,.04); border:1px solid rgba(13,115,119,.25); border-radius:2px; padding:.82rem 1rem .82rem 2.6rem; color:var(--cream); font-family:'Jost',sans-serif; font-size:.9rem; outline:none; transition:border-color .25s,background .25s,box-shadow .25s; -webkit-appearance:none; }
+.gate-finput::placeholder { color:rgba(238,244,245,.28); }
+.gate-finput:focus { border-color:rgba(20,169,173,.55); background:rgba(255,255,255,.07); box-shadow:0 0 0 3px rgba(13,115,119,.08); }
+.gate-phone-row { display:grid; grid-template-columns:88px 1fr; gap:.5rem; }
+.gate-fselect { padding:.82rem .6rem; background:rgba(255,255,255,.04); border:1px solid rgba(13,115,119,.25); border-radius:2px; color:var(--cream); font-family:'Jost',sans-serif; font-size:.82rem; outline:none; cursor:pointer; -webkit-appearance:none; text-align:center; }
+.gate-fselect option { background:#001a1e; }
+.gate-ferr { font-family:'Jost',sans-serif; font-size:.68rem; color:#ff6b4a; margin-top:.28rem; display:none; }
+.gate-fwrap.has-error .gate-finput { border-color:rgba(255,107,74,.5) !important; }
+.gate-fwrap.has-error .gate-ferr { display:block; }
+.gate-submit { display:flex; align-items:center; justify-content:center; gap:.55rem; width:100%; padding:1rem 1.5rem; background:linear-gradient(135deg,#0D7377,#0a5558); color:#fff; font-family:'Jost',sans-serif; font-size:.84rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; border:none; border-radius:2px; cursor:pointer; transition:transform .2s,box-shadow .2s; margin-top:.3rem; box-shadow:0 6px 24px rgba(13,115,119,.38); }
+.gate-submit:hover { transform:translateY(-2px); box-shadow:0 10px 32px rgba(13,115,119,.48); }
+.gate-submit:disabled { opacity:.6; cursor:not-allowed; transform:none; }
+.gate-btn-arrow { width:15px; height:15px; fill:#fff; transition:transform .2s; }
+.gate-submit:hover .gate-btn-arrow { transform:translateX(3px); }
+.gate-btn-spinner { width:15px; height:15px; border:2px solid rgba(255,255,255,.3); border-top-color:#fff; border-radius:50%; animation:gspin .7s linear infinite; display:none; }
+@keyframes gspin { to{transform:rotate(360deg)} }
+.gate-submit.loading .gate-btn-spinner { display:block; }
+.gate-submit.loading .gate-btn-text, .gate-submit.loading .gate-btn-arrow { display:none; }
+.gate-privacy { font-family:'Jost',sans-serif; font-size:.68rem; color:rgba(238,244,245,.28); text-align:center; margin-top:.7rem; line-height:1.6; }
+#gate-success { display:none; flex-direction:column; align-items:center; text-align:center; padding:2.5rem 2rem 2.8rem; gap:.9rem; }
+.gate-succ-icon { width:60px; height:60px; border-radius:50%; background:rgba(37,211,102,.1); border:2px solid rgba(37,211,102,.3); display:flex; align-items:center; justify-content:center; animation:gPopIn .5s cubic-bezier(.16,1,.3,1); }
+@keyframes gPopIn { from{transform:scale(0)} to{transform:scale(1)} }
+.gate-succ-icon svg { width:26px; height:26px; fill:#25D366; }
+.gate-succ-title { font-family:'Cormorant Garamond',serif; font-size:clamp(1.5rem,4vw,1.9rem); font-weight:700; color:var(--cream); line-height:1.2; }
+.gate-succ-title em { color:var(--teal2); font-style:italic; }
+.gate-succ-msg { font-family:'Jost',sans-serif; font-size:.85rem; color:rgba(238,244,245,.6); line-height:1.75; max-width:340px; }
+.gate-succ-wa { display:inline-flex; align-items:center; gap:.5rem; padding:.8rem 1.8rem; background:#25D366; color:#fff; border-radius:2px; font-family:'Jost',sans-serif; font-size:.82rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; transition:background .2s,transform .2s; margin-top:.3rem; }
+.gate-succ-wa:hover { background:#1ebe5d; transform:translateY(-2px); }
+.gate-succ-wa svg { width:16px; height:16px; fill:#fff; flex-shrink:0; }
+.gate-enter-btn { font-family:'Jost',sans-serif; font-size:.7rem; color:rgba(238,244,245,.25); cursor:pointer; border:none; background:none; letter-spacing:.05em; transition:color .2s; margin-top:.2rem; }
+.gate-enter-btn:hover { color:rgba(238,244,245,.5); }
+</style>
+
+<!-- GATE HTML -->
+<div id="lead-gate" role="dialog" aria-modal="true">
+  <div id="lead-modal">
+    <div class="gate-bar"></div>
+    <div class="gate-om-row">
+      <span class="gate-om" style="--d:.0s">ॐ</span>
+      <span class="gate-om gold" style="--d:.3s">🪷</span>
+      <span class="gate-om" style="--d:.6s">ॐ</span>
+      <span class="gate-om gold" style="--d:.9s">🪷</span>
+      <span class="gate-om" style="--d:1.2s">ॐ</span>
+      <span class="gate-om gold" style="--d:1.5s">🪷</span>
+      <span class="gate-om" style="--d:1.8s">ॐ</span>
+    </div>
+    <div id="gate-form-state">
+      <div class="gate-body">
+        <span class="gate-eyebrow">🇮🇳 Índia · Verão Sagrado · Julho 2026</span>
+        <div class="gate-rule"><div class="gate-rule-dot"></div></div>
+        <h2 class="gate-title">Garanta sua vaga<br><em>antes que esgote</em></h2>
+        <div class="gate-ornament">✦ &nbsp; ✦ &nbsp; ✦</div>
+        <p class="gate-sub">Grupo exclusivo · Máx. 10 viajantes · 1–11 Jul 2026<br>Delhi · Agra · Varanasi · Jaipur · Trem Histórico</p>
+        <div class="gate-badges">
+          <span class="gate-badge">✈️ Voo Incluído</span>
+          <span class="gate-badge">🛕 Varanasi</span>
+          <span class="gate-badge">🚂 Trem Histórico</span>
+          <span class="gate-badge">⭐ Hotéis 4★</span>
+          <span class="gate-badge">🇧🇷 Guia BR</span>
+          <span class="gate-badge">👥 Máx. 10 pessoas</span>
+        </div>
+        <form class="gate-form" id="gateForm" novalidate>
+          <div>
+            <label class="gate-flabel" for="g-name">Seu Nome Completo</label>
+            <div class="gate-fwrap" id="gwrap-name">
+              <svg class="gate-ficon" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
+              <input type="text" id="g-name" class="gate-finput" placeholder="Ex: Maria da Silva" autocomplete="name" required>
+              <span class="gate-ferr" id="gerr-name">Por favor, informe seu nome.</span>
+            </div>
+          </div>
+          <div>
+            <label class="gate-flabel" for="g-phone">WhatsApp</label>
+            <div class="gate-phone-row">
+              <select id="g-ddi" class="gate-fselect">
+                <option value="+55" selected>🇧🇷 +55</option>
+                <option value="+1">🇺🇸 +1</option>
+                <option value="+351">🇵🇹 +351</option>
+                <option value="+54">🇦🇷 +54</option>
+                <option value="+598">🇺🇾 +598</option>
+                <option value="+56">🇨🇱 +56</option>
+              </select>
+              <div class="gate-fwrap" id="gwrap-phone">
+                <svg class="gate-ficon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <input type="tel" id="g-phone" class="gate-finput" placeholder="(11) 99999-9999" autocomplete="tel" inputmode="tel" required>
+                <span class="gate-ferr" id="gerr-phone">Informe um WhatsApp válido.</span>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="gate-submit" id="gateSubmit">
+            <div class="gate-btn-spinner"></div>
+            <span class="gate-btn-text">Quero Minha Vaga · Julho 2026</span>
+            <svg class="gate-btn-arrow" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </button>
+          <p class="gate-privacy">🔒 Seus dados são 100% seguros. Apenas Fernanda entrará em contato.</p>
+        </form>
+      </div>
+    </div>
+    <div id="gate-success">
+      <div class="gate-om-row" style="padding-top:1.5rem;">
+        <span class="gate-om" style="--d:.0s">ॐ</span>
+        <span class="gate-om gold" style="--d:.3s">🪷</span>
+        <span class="gate-om" style="--d:.6s">ॐ</span>
+        <span class="gate-om gold" style="--d:.9s">🪷</span>
+        <span class="gate-om" style="--d:1.2s">ॐ</span>
+      </div>
+      <div class="gate-succ-icon"><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
+      <h3 class="gate-succ-title">🛕 Recebemos sua<br><em>solicitação!</em></h3>
+      <p class="gate-succ-msg">Obrigada, <strong id="gate-succ-name"></strong>!<br>Fernanda entrará em contato pelo seu WhatsApp em breve.</p>
+      <p style="font-family:'Jost',sans-serif;font-size:.72rem;color:rgba(13,115,119,.7);margin-top:-.2rem;">Abrindo a página em <strong id="gate-countdown" style="color:var(--teal2);">2</strong>s...</p>
+      <a href="https://wa.me/5511947727979?text=Ol%C3%A1%20Fernanda!%20Acabei%20de%20preencher%20o%20formul%C3%A1rio%20India%20Julho%202026!" target="_blank" class="gate-succ-wa">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chamar Fernanda no WhatsApp
+      </a>
+      <button class="gate-enter-btn" id="gate-enter-btn">Entrar na página →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const TO_EMAIL = 'fernanda@1point.com.br';
+  const FORM_URL = 'https://formsubmit.co/' + TO_EMAIL;
+
+  // Show gate after 30 seconds
+  function showGate() {
+    const gate = document.getElementById('lead-gate');
+    gate.style.display = 'flex';
+    gate.style.animation = 'gateIn .5s ease forwards';
+    document.body.classList.add('gate-active');
+  }
+  setTimeout(showGate, 30000);
+
+  document.addEventListener('keydown', e => { if (document.body.classList.contains('gate-active') && e.key === 'Escape') e.preventDefault(); });
+  document.getElementById('lead-gate').addEventListener('touchmove', e => e.preventDefault(), { passive: false });
+  function openPage() {
+    const gate = document.getElementById('lead-gate');
+    gate.classList.add('gate-hiding');
+    setTimeout(() => { gate.remove(); document.body.classList.remove('gate-active'); }, 450);
+  }
+  document.getElementById('gate-enter-btn').addEventListener('click', openPage);
+  function setErr(wrapId, errId) { document.getElementById(wrapId).classList.add('has-error'); document.getElementById(errId).style.display = 'block'; }
+  function clrErr(wrapId, errId) { document.getElementById(wrapId).classList.remove('has-error'); document.getElementById(errId).style.display = 'none'; }
+  document.getElementById('g-name').addEventListener('input', () => clrErr('gwrap-name','gerr-name'));
+  document.getElementById('g-phone').addEventListener('input', () => clrErr('gwrap-phone','gerr-phone'));
+  document.getElementById('g-phone').addEventListener('input', function() {
+    if (document.getElementById('g-ddi').value !== '+55') return;
+    let v = this.value.replace(/\D/g,'').slice(0,11);
+    v = v.length <= 10 ? v.replace(/^(\d{2})(\d{4})(\d{0,4})$/,'($1) $2-$3') : v.replace(/^(\d{2})(\d{5})(\d{0,4})$/,'($1) $2-$3');
+    this.value = v.replace(/-$/,'');
+  });
+  document.getElementById('gateForm').addEventListener('submit', async e => {
+    e.preventDefault();
+    const name = document.getElementById('g-name').value.trim();
+    const phone = document.getElementById('g-phone').value.trim();
+    const ddi = document.getElementById('g-ddi').value;
+    let ok = true;
+    if (!name || name.length < 2) { setErr('gwrap-name','gerr-name'); ok = false; } else { clrErr('gwrap-name','gerr-name'); }
+    if (phone.replace(/\D/g,'').length < 8) { setErr('gwrap-phone','gerr-phone'); ok = false; } else { clrErr('gwrap-phone','gerr-phone'); }
+    if (!ok) return;
+    const btn = document.getElementById('gateSubmit');
+    btn.classList.add('loading'); btn.disabled = true;
+    try {
+      const fd = new FormData();
+      fd.append('Nome', name); fd.append('WhatsApp', ddi + ' ' + phone);
+      fd.append('_subject', '🛕 Nova Lead — Índia Julho 2026: ' + name);
+      fd.append('_captcha', 'false'); fd.append('_template','table');
+      await fetch(FORM_URL, { method:'POST', body:fd, headers:{'Accept':'application/json'} });
+    } catch(_) {}
+    document.getElementById('gate-succ-name').textContent = name.split(' ')[0];
+    document.getElementById('gate-form-state').style.display = 'none';
+    const s = document.getElementById('gate-success'); s.style.display = 'flex';
+    btn.classList.remove('loading'); btn.disabled = false;
+    let count = 2;
+    const countEl = document.getElementById('gate-countdown');
+    const tick = setInterval(() => { count--; if (countEl) countEl.textContent = count; if (count <= 0) { clearInterval(tick); openPage(); } }, 1000);
+  });
+})();
+</script>
+
+<body>
+<div id="page-content">
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <img src="/logo.png" alt="Roteiros India" class="hero-logo" onerror="this.style.display='none'">
+    <span class="eyebrow">Roteiros India Apresenta</span>
+    <h1 class="serif">
+      Índia
+      <em>Verão Sagrado</em>
+    </h1>
+    <p class="hero-sub">Julho 2026 &nbsp;·&nbsp; Delhi · Agra · Varanasi · Jaipur &nbsp;·&nbsp; Uma Jornada Espiritual Exclusiva para Viajantes Brasileiros</p>
+    <div class="hero-badges">
+      <span class="hbadge">🗓 1–11 Jul 2026</span>
+      <span class="hbadge">✈️ Voo Incluído</span>
+      <span class="hbadge">👥 Máx. 10 Viajantes</span>
+      <span class="hbadge">🛕 Varanasi & Ganges</span>
+      <span class="hbadge">🚂 Trem Histórico</span>
+      <span class="hbadge">🇧🇷 Guia Brasileira</span>
+      <span class="hbadge">⭐ Hotéis 4★</span>
+    </div>
+    <div class="hero-cta">
+      <a href="#reserva" class="btn">Reserve Sua Vaga</a>
+      <a href="#roteiro" class="btn btn-ghost">Ver Roteiro</a>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>Descubra</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ SOBRE ═══════════════════════════════ -->
+<section class="sec">
+  <div class="about-grid">
+    <div>
+      <img src="/ChatGPT Image Feb 19, 2026 at 06_32_07 PM (1).png" alt="India" class="about-img">
+    </div>
+    <div class="about-text">
+      <span class="eyebrow">🌏 Sobre a Experiência</span>
+      <div class="rule" style="margin-top:.8rem;"><div class="rule-dot"></div></div>
+      <h2>Uma jornada que vai <em class="serif" style="color:var(--teal2);font-style:italic;">transformar</em> você</h2>
+      <br>
+      <p>Esta viagem exclusiva foi cuidadosamente desenhada para apresentar ao Brasil o coração espiritual da Índia — sua história milenar, espiritualidade profunda, herança real e os ghats sagrados de Varanasi.</p>
+      <p>O grupo parte do Brasil acompanhado por <strong style="color:var(--cream)">Fernanda</strong>, sua guia de turismo brasileira, que auxilia os viajantes durante toda a jornada internacional e ao longo de toda a experiência.</p>
+      <p>Na chegada à Índia, o grupo é calorosamente recebido por <strong style="color:var(--cream)">Mohit</strong>, seu anfitrião e guia local indiano, garantindo segurança, conforto e imersão cultural autêntica durante toda a viagem.</p>
+      <p>Viaje de <strong style="color:var(--cream)">trem histórico</strong> entre as cidades — uma experiência inesquecível que revela a Índia real, vista de dentro dos trilhos. Grupo reduzido: <strong style="color:var(--cream)">Máximo de 10 viajantes.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ PERIOD BANNER ═══════════════════════════════ -->
+<div class="period-banner">
+  <div class="period-banner-bg"></div>
+  <div class="period-banner-overlay"></div>
+  <div class="period-banner-inner">
+    <span class="eyebrow">📅 Período de Viagem</span>
+    <h2>1 a 11 de Julho de 2026</h2>
+    <p>10 Noites / 11 Dias na Índia &nbsp;·&nbsp; mais o tempo de viagem internacional</p>
+    <p style="margin-top:.5rem;">Delhi · Agra · Varanasi · Jaipur &nbsp;·&nbsp; <strong style="color:var(--teal2);">Trem Histórico incluído</strong></p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ TREM BANNER ═══════════════════════════════ -->
+<div class="train-banner">
+  <div class="train-banner-bg"></div>
+  <div class="train-banner-overlay"></div>
+  <div class="train-banner-inner">
+    <div class="train-badge">🚂 Experiência Exclusiva</div>
+    <h2>Viagem de Trem entre as Cidades</h2>
+    <p style="margin-top:.8rem;">Uma das experiências mais autênticas da Índia — viajar de trem pela paisagem indiana é um privilégio que poucos viajantes vivenciam. Conheça a Índia real, seus campos, aldeias e horizontes dourados vistos de dentro dos trilhos históricos.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ INCLUDES ═══════════════════════════════ -->
+<div class="inc-section">
+  <div class="inc-section-bg"></div>
+  <div class="inc-section-overlay"></div>
+  <div class="inc-section-glow tl"></div>
+  <div class="inc-section-glow br"></div>
+  <div class="inc-section-inner">
+    <div class="om-row">
+      <span class="om-symbol" style="--d:.0s">ॐ</span>
+      <span class="om-symbol gold" style="--d:.2s">🪷</span>
+      <span class="om-symbol" style="--d:.4s">ॐ</span>
+      <span class="om-symbol large gold" style="--d:.6s">✦</span>
+      <span class="om-symbol" style="--d:.8s">ॐ</span>
+      <span class="om-symbol gold" style="--d:1s">🪷</span>
+      <span class="om-symbol" style="--d:1.2s">ॐ</span>
+      <span class="om-symbol large gold" style="--d:1.4s">✦</span>
+      <span class="om-symbol" style="--d:1.6s">ॐ</span>
+      <span class="om-symbol gold" style="--d:1.8s">🪷</span>
+      <span class="om-symbol" style="--d:2s">ॐ</span>
+    </div>
+    <span class="eyebrow">✈️ Cobertura Completa</span>
+    <div class="rule" style="margin-top:.8rem;"><div class="rule-dot"></div></div>
+    <h2>Tudo o que está incluído</h2>
+    <p style="max-width:620px;margin-top:.8rem;">Desde o voo até o último passeio, cada detalhe foi pensado para que você só precise se preocupar em viver a experiência.</p>
+    <div class="inc-grid">
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-airplane"></i></div>
+          <h4>Passagens Aéreas</h4>
+          <p>Voos internacionais completos Brasil ↔ Índia incluídos no pacote.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1581553673739-c4906b5d0de8?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-identification-card"></i></div>
+          <h4>Assistência de Visto</h4>
+          <p>Suporte completo para obtenção do visto indiano, do início ao fim.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('/1.jpeg');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-flag"></i></div>
+          <h4>Guia Brasileira Fernanda</h4>
+          <p>Fernanda acompanha o grupo durante toda a jornada e experiência.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('/2.jpeg');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-person-simple-walk"></i></div>
+          <h4>Anfitrião Local Mohit</h4>
+          <p>Coordenação completa, segurança e imersão cultural autêntica na Índia.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-train"></i></div>
+          <h4>🚂 Trem Histórico</h4>
+          <p><strong>Viagem de trem entre as cidades incluída</strong> — uma das experiências mais autênticas da Índia.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-van"></i></div>
+          <h4>Transporte Privativo AC</h4>
+          <p>Veículo climatizado exclusivo. <strong>Água mineral e lanches disponíveis em todas as viagens.</strong></p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1709715460164-84abbe395f91?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-bed"></i></div>
+          <h4>Hotéis 4 Estrelas</h4>
+          <p>Acomodações selecionadas em hotéis 4★ em Delhi, Agra, Varanasi e Jaipur.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-shield-check"></i></div>
+          <h4>Segurança & Suporte 24h</h4>
+          <p><strong>Assistência completa online e presencial</strong> durante toda a viagem.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-arrows-in-line-horizontal"></i></div>
+          <h4>Transfers no Aeroporto</h4>
+          <p>Transfers de e para o aeroporto e toda a assistência em terra.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-ticket"></i></div>
+          <h4>Todos os Ingressos</h4>
+          <p><strong>Todos os ingressos para monumentos e pontos turísticos incluídos</strong> — sem surpresas.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1477587458883-47145ed94245?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-binoculars"></i></div>
+          <h4>Visitas Guiadas</h4>
+          <p>Visitas aos monumentos históricos com experiências culturais autênticas.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-waves"></i></div>
+          <h4>🛕 Cerimônia Ganga Aarti</h4>
+          <p><strong>Assistência à sagrada cerimônia Ganga Aarti</strong> às margens do Rio Ganges em Varanasi.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-fork-knife"></i></div>
+          <h4>Jantar Rajastanês</h4>
+          <p><strong>Noite cultural no Chokhi Dhani com jantar tradicional rajastanês completo incluso.</strong></p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1731964791215-ed423c927976?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-gift"></i></div>
+          <h4>Brindes de Boas-Vindas</h4>
+          <p>Kit especial e suporte de viagem personalizado para cada viajante.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-camera"></i></div>
+          <h4>Fotografia de Memórias</h4>
+          <p>Sessão fotográfica profissional para eternizar cada momento especial da sua jornada.</p>
+        </div>
+      </div>
+      <div class="inc-item">
+        <div class="inc-item-bg" style="background-image:url('https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=600&q=80');"></div>
+        <div class="inc-item-overlay"></div>
+        <div class="inc-item-content">
+          <div class="inc-item-icon"><i class="ph ph-egg"></i></div>
+          <h4>Café da Manhã Incluso</h4>
+          <p><strong>Café da manhã completo incluso</strong> em todas as hospedagens do roteiro.</p>
+        </div>
+      </div>
+    </div>
+    <div class="om-row btm">
+      <span class="om-symbol" style="--d:.0s">ॐ</span>
+      <span class="om-symbol gold" style="--d:.2s">🪷</span>
+      <span class="om-symbol" style="--d:.4s">ॐ</span>
+      <span class="om-symbol large gold" style="--d:.6s">✦</span>
+      <span class="om-symbol" style="--d:.8s">ॐ</span>
+      <span class="om-symbol gold" style="--d:1s">🪷</span>
+      <span class="om-symbol" style="--d:1.2s">ॐ</span>
+      <span class="om-symbol large gold" style="--d:1.4s">✦</span>
+      <span class="om-symbol" style="--d:1.6s">ॐ</span>
+      <span class="om-symbol gold" style="--d:1.8s">🪷</span>
+      <span class="om-symbol" style="--d:2s">ॐ</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ PHOTO STRIP ═══════════════════════════════ -->
+<div class="wrap" style="margin-bottom:6rem;">
+  <div class="photo-strip">
+    <div class="ps ps1">
+      <img src="https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=900&q=85" alt="Varanasi Ganges">
+      <span class="ps-cap">Ghats · Varanasi</span>
+    </div>
+    <div class="ps ps2">
+      <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=85" alt="Taj Mahal">
+      <span class="ps-cap">Taj Mahal · Agra</span>
+    </div>
+    <div class="ps ps3">
+      <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=600&q=85" alt="Delhi">
+      <span class="ps-cap">India Gate · Delhi</span>
+    </div>
+    <div class="ps ps4">
+      <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=600&q=85" alt="Amber Fort">
+      <span class="ps-cap">Forte Amber · Jaipur</span>
+    </div>
+    <div class="ps ps5">
+      <img src="http://getwallpapers.com/wallpaper/full/9/1/d/364210.jpg" alt="Train India">
+      <span class="ps-cap">Trem Histórico</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ HOSPEDAGEM ═══════════════════════════════ -->
+<section class="sec" style="padding-top:0;">
+  <span class="eyebrow">🏨 Hospedagem</span>
+  <div class="rule" style="margin-top:.8rem;"><div class="rule-dot"></div></div>
+  <h2>Hotéis 4 Estrelas Selecionados</h2>
+  <p style="max-width:680px;margin-top:.8rem;">Acomodações confortáveis e verificadas em quatro destinos. Quartos compartilhados — 2 viajantes por quarto. Café da manhã incluso diariamente.</p>
+
+  <div class="hotel-grid">
+
+    <!-- ── DELHI ── -->
+    <div class="hotel-card">
+      <div class="hotel-photos">
+        <div class="hotel-photo-track" data-hotel="delhi">
+          <div class="hotel-photo-slide"><img src="/111.jpeg" alt="Delhi Hotel Lobby"></div>
+          <div class="hotel-photo-slide"><img src="/112.jpeg" alt="Delhi Hotel Room"></div>
+          <div class="hotel-photo-slide"><img src="/113.jpeg" alt="Delhi Hotel Pool"></div>
+          <div class="hotel-photo-slide"><img src="/100.jpeg" alt="Delhi Hotel Restaurant"></div>
+        </div>
+        <button class="hotel-arrow prev" aria-label="Anterior">‹</button>
+        <button class="hotel-arrow next" aria-label="Próximo">›</button>
+        <div class="hotel-dots">
+          <div class="hotel-dot active"></div>
+          <div class="hotel-dot"></div>
+          <div class="hotel-dot"></div>
+          <div class="hotel-dot"></div>
+        </div>
+        <span class="hotel-photo-count">1 / 4</span>
+      </div>
+      <div class="hotel-info">
+        <div class="stars">★★★★</div>
+        <h4>🏙️ Nova Delhi</h4>
+        <p> Hotel Banz Near Indira Gandhi Airport 
+A-137 ROAD NO 4, Mahipalpur Extension, Mahipalpur, New Delhi.</p>
+        <div class="hotel-amenities">
+          <span class="hotel-amenity">☕ Café da Manhã</span>
+          <span class="hotel-amenity">❄️ AC</span>
+          <span class="hotel-amenity">🔒 Seguro</span>
+          <span class="hotel-amenity">🛜 Wi-Fi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── AGRA ── -->
+    <div class="hotel-card">
+      <div class="hotel-photos">
+        <div class="hotel-photo-track" data-hotel="agra">
+          <div class="hotel-photo-slide"><img src="/331.jpeg" alt="Agra Hotel Exterior"></div>
+          <div class="hotel-photo-slide"><img src="/332.jpeg" alt="Agra Hotel Room"></div>
+          <div class="hotel-photo-slide"><img src="/333.jpeg" alt="Agra Hotel Pool"></div>
+          <div class="hotel-photo-slide"><img src="/334.jpeg" alt="Agra Hotel Dining"></div>
+        </div>
+        <button class="hotel-arrow prev" aria-label="Anterior">‹</button>
+        <button class="hotel-arrow next" aria-label="Próximo">›</button>
+        <div class="hotel-dots">
+          <div class="hotel-dot active"></div>
+          <div class="hotel-dot"></div>
+          <div class="hotel-dot"></div>
+          <div class="hotel-dot"></div>
+        </div>
+        <span class="hotel-photo-count">1 / 4</span>
+      </div>
+      <div class="hotel-info">
+        <div class="stars">★★★</div>
+        <h4>🕌 Agra </h4>
+        <p>HOTEL TEN SQUARE - 5
+Minutes from The Taj Mahal Hig-8, Taj Nagari Phase-1, Fatehabad Road, Behind Taj Hotel & Convention Centre,, Agra</p>
+        <div class="hotel-amenities">
+          <span class="hotel-amenity">☕ Café da Manhã</span>
+          <span class="hotel-amenity">🕌 Vista Taj</span>
+          <span class="hotel-amenity">❄️ AC</span>
+          <span class="hotel-amenity">🛜 Wi-Fi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── VARANASI ── -->
+    <div class="hotel-card">
+      <div class="hotel-photos">
+        <div class="hotel-photo-track" data-hotel="varanasi">
+          <div class="hotel-photo-slide"><img src="/55.jpeg" alt="Varanasi Hotel"></div>
+          <div class="hotel-photo-slide"><img src="/56.jpeg" alt="Varanasi Hotel Room"></div>
+          <div class="hotel-photo-slide"><img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80" alt="Varanasi Hotel Terrace"></div>
+          <div class="hotel-photo-slide"><img src="https://images.unsplash.com/photo-1561501878-aabd62634533?w=800&q=80" alt="Varanasi Hotel View"></div>
+        </div>
+        <button class="hotel-arrow prev" aria-label="Anterior">‹</button>
+        <button class="hotel-arrow next" aria-label="Próximo">›</button>
+        <div class="hotel-dots">
+          <div class="hotel-dot active"></div>
+          <div class="hotel-dot"></div>
+          <div class="hotel-dot"></div>
+          <div class="hotel-dot"></div>
+        </div>
+        <span class="hotel-photo-count">1 / 4</span>
+      </div>
+      <div class="hotel-info">
+        <div class="stars">★★★★</div>
+        <h4>🛕 Varanasi</h4>
+        <p>Shree Ganesha Palace Near Kashi Vishwanath Temple</p>
+        <div class="hotel-amenities">
+          <span class="hotel-amenity">☕ Café da Manhã</span>
+          <span class="hotel-amenity">🛕 Vista Ganges</span>
+          <span class="hotel-amenity">❄️ AC</span>
+          <span class="hotel-amenity">🛜 Wi-Fi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── JAIPUR ── -->
+    <div class="hotel-card">
+      <div class="hotel-photos">
+        <div class="hotel-photo-track" data-hotel="jaipur">
+          <div class="hotel-photo-slide"><img src="/444.jpeg" alt="Jaipur Hotel Exterior"></div>
+          <div class="hotel-photo-slide"><img src="/442.jpeg" alt="Jaipur Hotel Room"></div>
+          <div class="hotel-photo-slide"><img src="/441.jpeg" alt="Jaipur Hotel Pool"></div>
+          <div class="hotel-photo-slide"><img src="/444.jpeg" alt="Jaipur Hotel Courtyard"></div>
+        </div>
+        <button class="hotel-arrow prev" aria-label="Anterior">‹</button>
+        <button class="hotel-arrow next" aria-label="Próximo">›</button>
+        <div class="hotel-dots">
+          <div class="hotel-dot active"></div>
+          <div class="hotel-dot"></div>
+          <div class="hotel-dot"></div>
+          <div class="hotel-dot"></div>
+        </div>
+        <span class="hotel-photo-count">1 / 4</span>
+      </div>
+      <div class="hotel-info">
+        <div class="stars">★★★</div>
+        <h4>🏯 Jaipur </h4>
+        <p>hotel taj new .</p>
+        <div class="hotel-amenities">
+          <span class="hotel-amenity">☕ Café da Manhã</span>
+          <span class="hotel-amenity">🏯 Estilo Real</span>
+          <span class="hotel-amenity">❄️ AC</span>
+          <span class="hotel-amenity">🛜 Wi-Fi</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ ROTEIRO ═══════════════════════════════ -->
+<div id="roteiro">
+  <div style="background:var(--ink2);padding:4rem 1.5rem;text-align:center;">
+    <span class="eyebrow">🗺️ Programação Detalhada</span>
+    <div class="rule" style="margin-top:.8rem;max-width:300px;margin-left:auto;margin-right:auto;"><div class="rule-dot"></div></div>
+    <h2 style="margin-bottom:.8rem;">Roteiro <em class="serif" style="color:var(--teal2);font-style:italic;">Dia a Dia</em></h2>
+    <p style="max-width:560px;margin:0 auto;">Delhi · Agra · Varanasi · Jaipur · Trem Histórico · Ghats do Ganges · Monumentos · Cultura · Espiritualidade</p>
+  </div>
+
+  <div class="itinerary">
+
+    <!-- DIA 1 -->
+    <div class="day-section">
+      <div class="day-bg" style="background-image:url('https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1400&q=80');"></div>
+      <div class="day-overlay"></div>
+      <div class="day-inner">
+        <div class="day-meta">
+          <span class="day-tag">Dia 1 · 1 Jul</span>
+          <div class="day-num-big">01ºDIA</div>
+          <p class="day-title-sm">📍 Nova Delhi</p>
+        </div>
+        <div class="day-content-side">
+          <h3>🛬 Chegada em Nova Delhi 🇮🇳</h3>
+          <p style="margin-bottom:1.5rem;">Após viajar juntos do Brasil com Fernanda, chegada à Índia e boas-vindas calorosas de Mohit no Aeroporto Internacional de Nova Delhi.</p>
+          <div class="day-block">
+            <span class="day-block-label">☀️ MANHÃ</span>
+            <ul>
+              <li>Transfer privativo do aeroporto</li>
+              <li>Check-in no hotel e descanso após a longa viagem internacional</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">🌙 TARDE</span>
+            <ul>
+              <li>Primeira introdução à Índia com visita ao icônico India Gate</li>
+              <li>Passeio panorâmico pelo boulevard cerimonial de Nova Delhi</li>
+              <li>Briefing de boas-vindas e apresentação da jornada</li>
+            </ul>
+          </div>
+          <p class="night-note">🌙 Pernoite em Delhi.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 2 -->
+    <div class="day-section">
+      <div class="day-bg" style="background-image:url('https://cdn.britannica.com/75/152475-050-DA89FF0A/Red-Fort-Old-Delhi-India.jpg');"></div>
+      <div class="day-overlay"></div>
+      <div class="day-inner">
+        <div class="day-meta">
+          <span class="day-tag">Dia 2 · 2 Jul</span>
+          <div class="day-num-big">02ºDIA</div>
+          <p class="day-title-sm">📍 Nova Delhi</p>
+        </div>
+        <div class="day-content-side">
+          <h3>🕌 Descobrindo Delhi</h3>
+          <div class="day-block">
+            <span class="day-block-label">🌅 Manhã</span>
+            <ul>
+              <li>Visita aos arredores históricos do Forte Vermelho</li>
+              <li>Panorama do exterior da Jama Masjid</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">☀️ Tarde</span>
+            <ul>
+              <li>Visita ao magnífico <strong>Qutub Minar</strong> — o minarete de tijolos mais alto do mundo, patrimônio UNESCO</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">🌙 Noite</span>
+            <ul><li>Retorno ao hotel e momento de relaxamento</li></ul>
+          </div>
+          <p class="night-note">🌙 Pernoite em Delhi.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 3 -->
+    <div class="day-section">
+      <div class="day-bg" style="background-image:url('https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1400&q=80');"></div>
+      <div class="day-overlay"></div>
+      <div class="day-inner">
+        <div class="day-meta">
+          <span class="day-tag">Dia 3 · 3 Jul</span>
+          <div class="day-num-big">03ºDIA</div>
+          <p class="day-title-sm">📍 Delhi → Agra</p>
+        </div>
+        <div class="day-content-side">
+          <h3>🏰 Delhi → Agra</h3>
+          <div class="day-block">
+            <span class="day-block-label">🌅 Manhã</span>
+            <ul>
+              <li>Viagem confortável para Agra em veículo privativo climatizado <strong>(água mineral e lanches a bordo)</strong></li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">☀️ Tarde</span>
+            <ul>
+              <li>Check-in no hotel</li>
+              <li>Visita ao Forte de Agra — residência real dos imperadores Mughal</li>
+              <li>Experiência ao pôr do sol na área próxima ao Taj Mahal</li>
+            </ul>
+          </div>
+          <p class="night-note">🌙 Pernoite em Agra.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 4 -->
+    <div class="day-section">
+      <div class="day-bg" style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?w=1400&q=80');"></div>
+      <div class="day-overlay"></div>
+      <div class="day-inner">
+        <div class="day-meta">
+          <span class="day-tag">Dia 4 · 4 Jul</span>
+          <div class="day-num-big">04ºDIA</div>
+          <p class="day-title-sm">📍 Agra → Varanasi</p>
+        </div>
+        <div class="day-content-side">
+          <h3>🌅 Taj Mahal ao Amanhecer & Partida para Varanasi</h3>
+          <div class="day-block">
+            <span class="day-block-label">🌄 Amanhecer</span>
+            <ul>
+              <li>Visita ao magnífico Taj Mahal ao nascer do sol <strong>(ingressos incluídos)</strong> — um dos momentos mais mágicos de toda a viagem</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">🌅 Final da Manhã</span>
+            <ul>
+              <li>Café da manhã no hotel</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label train-journey-badge">🚂 Tarde — Trem Histórico</span>
+            <ul>
+              <li><strong>Embarque no trem histórico Agra → Varanasi</strong> — uma das experiências mais autênticas da Índia</li>
+              <li>Paisagens da planície do Ganges pela janela do trem</li>
+              <li>Convívio e imersão cultural durante a jornada ferroviária</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">🌙 Noite</span>
+            <ul>
+              <li>Chegada a Varanasi e check-in no hotel</li>
+            </ul>
+          </div>
+          <p class="night-note">🌙 Pernoite em Varanasi.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 5 — VARANASI ESPECIAL -->
+    <div class="day-section is-special">
+      <div class="day-bg" style="background-image:url('https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=1400&q=85');"></div>
+      <div class="day-overlay"></div>
+      <div class="day-inner">
+        <div class="day-meta">
+          <span class="day-tag special">✨ Especial</span>
+          <span class="day-tag" style="margin-top:.4rem;">Dia 5 · 5 Jul</span>
+          <div class="day-num-big">05ºDIA</div>
+          <p class="day-title-sm">📍 Varanasi</p>
+        </div>
+        <div class="day-content-side">
+          <div class="special-badge">🛕 Cidade Sagrada</div>
+          <h3>Os Ghats Sagrados do Ganges 🕉️</h3>
+          <div class="day-block">
+            <span class="day-block-label">🌄 Amanhecer</span>
+            <ul>
+              <li><strong>Passeio de barco ao amanhecer nos Ghats do Rio Ganges</strong> — um dos momentos mais espirituais da viagem</li>
+              <li>Observe a rotina milenar dos hindus nos degraus sagrados</li>
+              <li>Banhos rituais, meditações e a Índia mais profunda revelada</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">☀️ Manhã</span>
+            <ul>
+              <li>Visita ao templo Kashi Vishwanath — um dos templos hindus mais sagrados do mundo</li>
+              <li>Exploração das ruelas de Varanasi e seus bazares históricos</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">🌙 Noite — Ganga Aarti</span>
+            <ul>
+              <li><strong>Assistência à sagrada cerimônia Ganga Aarti</strong> no Dashashwamedh Ghat</li>
+              <li>Centenas de sacerdotes realizando a ritual de fogo e luzes ao entardecer</li>
+              <li>Uma das cerimônias mais emocionantes e inesquecíveis do mundo</li>
+            </ul>
+          </div>
+          <p class="night-note">🌙 Pernoite em Varanasi.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 6 -->
+    <div class="day-section">
+      <div class="day-bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80');"></div>
+      <div class="day-overlay is-train"></div>
+      <div class="day-inner">
+        <div class="day-meta">
+          <span class="day-tag train-tag">🚂 Trem</span>
+          <span class="day-tag" style="margin-top:.4rem;">Dia 6 · 6 Jul</span>
+          <div class="day-num-big">06ºDIA</div>
+          <p class="day-title-sm">📍 Varanasi → Jaipur</p>
+        </div>
+        <div class="day-content-side">
+          <div class="train-journey-badge">🚂 Jornada Ferroviária</div>
+          <h3>Varanasi → Jaipur de Trem 🏯</h3>
+          <div class="day-block">
+            <span class="day-block-label">🌅 Manhã</span>
+            <ul>
+              <li>Última manhã em Varanasi — tempo para contemplação ou exploração livre</li>
+              <li>Café da manhã no hotel</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">🚂 Dia — Trem Histórico</span>
+            <ul>
+              <li><strong>Embarque no trem histórico Varanasi → Jaipur</strong></li>
+              <li>Jornada panorâmica atravessando o coração da Índia</li>
+              <li>Paisagens rurais, campos de mostarda e vilas milenares pela janela</li>
+              <li>Tempo de convívio, histórias e imersão cultural com o grupo</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">🌙 Noite</span>
+            <ul>
+              <li>Chegada a Jaipur e check-in no hotel</li>
+              <li>Primeiro contato com a Cidade Rosa</li>
+            </ul>
+          </div>
+          <p class="night-note">🌙 Pernoite em Jaipur.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 7 -->
+    <div class="day-section">
+      <div class="day-bg" style="background-image:url('https://images.unsplash.com/photo-1477587458883-47145ed94245?w=1400&q=80');"></div>
+      <div class="day-overlay"></div>
+      <div class="day-inner">
+        <div class="day-meta">
+          <span class="day-tag">Dia 7 · 7 Jul</span>
+          <div class="day-num-big">07ºDIA</div>
+          <p class="day-title-sm">📍 Jaipur</p>
+        </div>
+        <div class="day-content-side">
+          <h3>🏯 Experiência Real em Jaipur</h3>
+          <div class="day-block">
+            <span class="day-block-label">🌅 Manhã</span>
+            <ul>
+              <li>Visita ao majestoso Forte Amber</li>
+              <li>Parada fotográfica no Jal Mahal (Palácio da Água)</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">☀️ Tarde</span>
+            <ul>
+              <li>Exploração do Palácio da Cidade</li>
+              <li>Visita ao icônico Hawa Mahal (Palácio dos Ventos)</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">🌙 Noite</span>
+            <ul><li>Retorno ao hotel</li></ul>
+          </div>
+          <p class="night-note">🌙 Pernoite em Jaipur.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 8 — CHOKHI DHANI -->
+    <div class="day-section is-special">
+      <div class="day-bg" style="background-image:url('https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1400&q=80');"></div>
+      <div class="day-overlay"></div>
+      <div class="day-inner">
+        <div class="day-meta">
+          <span class="day-tag special">✨ Especial</span>
+          <span class="day-tag" style="margin-top:.4rem;">Dia 8 · 8 Jul</span>
+          <div class="day-num-big">08ºDIA</div>
+          <p class="day-title-sm">📍 Jaipur</p>
+        </div>
+        <div class="day-content-side">
+          <div class="special-badge">🎭 Cultura Rajastanesa</div>
+          <h3>Forte Nahargarh & Chokhi Dhani 🌄</h3>
+          <div class="day-block">
+            <span class="day-block-label">🌅 Manhã</span>
+            <ul>
+              <li>Visita ao Forte Nahargarh com vistas panorâmicas de Jaipur</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">☀️ Tarde</span>
+            <ul>
+              <li>Descanso e tempo livre na cidade</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">🌙 Noite — Chokhi Dhani</span>
+            <ul>
+              <li>Visita cultural à aldeia tradicional Chokhi Dhani</li>
+              <li>Danças folclóricas, música e apresentações ao vivo</li>
+              <li>Passeio de camelo e elefante</li>
+              <li><strong>Jantar Rajastanês Tradicional completo incluso</strong></li>
+            </ul>
+          </div>
+          <p class="night-note">🌙 Pernoite em Jaipur.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 9 -->
+    <div class="day-section">
+      <div class="day-bg" style="background-image:url('https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1400&q=80');"></div>
+      <div class="day-overlay"></div>
+      <div class="day-inner">
+        <div class="day-meta">
+          <span class="day-tag">Dia 9 · 9 Jul</span>
+          <div class="day-num-big">09ºDIA</div>
+          <p class="day-title-sm">📍 Jaipur → Delhi</p>
+        </div>
+        <div class="day-content-side">
+          <h3>🛍️ Retorno a Delhi & Compras</h3>
+          <div class="day-block">
+            <span class="day-block-label">🌅 Manhã</span>
+            <ul>
+              <li>Viagem confortável de volta a Delhi em veículo privativo climatizado</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">☀️ Tarde</span>
+            <ul>
+              <li>Check-in no hotel e tempo livre para relaxar</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">🌙 Noite — Compras</span>
+            <ul>
+              <li>Visita guiada aos famosos mercados locais</li>
+              <li>Artesanato indiano, tecidos, joias e lembranças únicas</li>
+              <li>Assistência de Mohit e Fernanda para experiência segura</li>
+            </ul>
+          </div>
+          <p class="night-note">🌙 Pernoite em Delhi.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 10 -->
+    <div class="day-section">
+      <div class="day-bg" style="background-image:url('https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1400&q=80');"></div>
+      <div class="day-overlay"></div>
+      <div class="day-inner">
+        <div class="day-meta">
+          <span class="day-tag">Dia 10 · 10 Jul</span>
+          <div class="day-num-big">10ºDIA</div>
+          <p class="day-title-sm">📍 Delhi</p>
+        </div>
+        <div class="day-content-side">
+          <h3>🌸 Templos & Espiritualidade em Delhi</h3>
+          <div class="day-block">
+            <span class="day-block-label">☀️ Manhã</span>
+            <ul>
+              <li>Visita ao deslumbrante <strong>Templo de Lótus</strong> — uma obra-prima da arquitetura moderna e símbolo da Fé Bahá'í</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">🌅 Tarde</span>
+            <ul>
+              <li>Experiência espiritual no <strong>Templo ISKCON</strong> — um dos maiores centros Hare Krishna do mundo</li>
+              <li>Tempo livre para últimas compras ou exploração da cidade</li>
+            </ul>
+          </div>
+          <div class="day-block">
+            <span class="day-block-label">🌙 Noite — Despedida</span>
+            <ul>
+              <li>Confraternização de despedida com o grupo</li>
+              <li>Compartilhamento das memórias mais marcantes da jornada</li>
+              <li>Últimas lembranças e abraços antes do retorno</li>
+            </ul>
+          </div>
+          <p class="night-note">🌙 Pernoite em Delhi.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIA 11 -->
+    <div class="day-section">
+      <div class="day-bg" style="background-image:url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1400&q=80');"></div>
+      <div class="day-overlay"></div>
+      <div class="day-inner">
+        <div class="day-meta">
+          <span class="day-tag">Dia 11 · 11 Jul</span>
+          <div class="day-num-big">11ºDIA</div>
+          <p class="day-title-sm">📍 Delhi → Brasil</p>
+        </div>
+        <div class="day-content-side">
+          <h3>✈️ Partida — De Volta ao Brasil</h3>
+          <p style="margin-bottom:1.5rem;">Com a alma cheia de espiritualidade, história e memórias eternas dos ghats sagrados, monumentos e trilhos históricos.</p>
+          <div class="day-block">
+            <span class="day-block-label">Programação</span>
+            <ul>
+              <li>Café da manhã no hotel</li>
+              <li>Assistência para transfer ao aeroporto</li>
+              <li>Jornada de retorno ao Brasil com memórias que durarão para sempre</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ VARANASI HIGHLIGHT ═══════════════════════════════ -->
+<div class="varanasi-hl">
+  <div class="varanasi-hl-bg"></div>
+  <div class="varanasi-hl-overlay"></div>
+  <div style="position:absolute;top:1.5rem;left:0;right:0;z-index:1;display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;">
+    <span style="font-size:1rem;color:var(--teal2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:.0s">ॐ</span>
+    <span style="font-size:1rem;color:var(--gold2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:.4s">🪷</span>
+    <span style="font-size:1rem;color:var(--teal2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:.8s">ॐ</span>
+    <span style="font-size:1rem;color:var(--gold2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:1.2s">🪷</span>
+    <span style="font-size:1rem;color:var(--teal2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:1.6s">ॐ</span>
+    <span style="font-size:1rem;color:var(--gold2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:2s">🪷</span>
+    <span style="font-size:1rem;color:var(--teal2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:2.4s">ॐ</span>
+  </div>
+  <div class="varanasi-hl-inner">
+    <span class="hl-icons">🛕 ॐ 🪷</span>
+    <span class="eyebrow">Experiência Única · Dias 5 & 6 · Varanasi</span>
+    <div class="hl-divider"></div>
+    <h2>Varanasi — A Cidade Eterna</h2>
+    <div class="hl-divider"></div>
+    <p>Considerada uma das cidades habitadas mais antigas do mundo, Varanasi é o coração espiritual da Índia. Passeio de barco ao amanhecer nos ghats sagrados do Ganges, templos milenares, ruelas cheias de história e a emocionante <strong style="color:var(--teal2)">cerimônia Ganga Aarti</strong> — um ritual de fogo e luz que emociona até os mais céticos. Uma experiência que transforma.</p>
+  </div>
+  <div style="position:absolute;bottom:1.5rem;left:0;right:0;z-index:1;display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;">
+    <span style="font-size:1rem;color:var(--teal2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:.0s">ॐ</span>
+    <span style="font-size:1rem;color:var(--gold2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:.4s">🪷</span>
+    <span style="font-size:1rem;color:var(--teal2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:.8s">ॐ</span>
+    <span style="font-size:1rem;color:var(--gold2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:1.2s">🪷</span>
+    <span style="font-size:1rem;color:var(--teal2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:1.6s">ॐ</span>
+    <span style="font-size:1rem;color:var(--gold2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:2s">🪷</span>
+    <span style="font-size:1rem;color:var(--teal2);opacity:.6;animation:omPulse 3s ease-in-out infinite;animation-delay:2.4s">ॐ</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ GASTRONOMIA ═══════════════════════════════ -->
+<section class="food-section">
+  <span class="eyebrow">🍛 Sabores da Índia</span>
+  <div class="rule" style="margin-top:.8rem;"><div class="rule-dot"></div></div>
+  <h2>Uma viagem que também é <em class="serif" style="color:var(--teal2);font-style:italic;">para o paladar</em></h2>
+  <p style="max-width:620px;margin-top:.8rem;">A culinária indiana é uma experiência à parte — cores vibrantes, especiarias únicas e sabores que contam séculos de história. Do café da manhã ao jantar festivo no Chokhi Dhani, cada refeição é uma celebração.</p>
+  <div class="food-grid">
+    <div class="food-item large">
+      <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&q=85" alt="Indian Thali">
+      <div class="food-cap"><small>Prato Principal</small>Thali Rajastanês</div>
+    </div>
+    <div class="food-item">
+      <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=500&q=85" alt="Biryani">
+      <div class="food-cap"><small>Clássico Indiano</small>Biryani</div>
+    </div>
+    <div class="food-item tall">
+      <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&q=85" alt="Samosa">
+      <div class="food-cap"><small>Street Food</small>Samosa & Chutney</div>
+    </div>
+    <div class="food-item">
+      <img src="https://budleaf.com/wp-content/uploads/2023/04/How-to-make-masala-chai-1568x1039.jpeg" alt="Masala Chai">
+      <div class="food-cap"><small>Bebida Sagrada</small>Masala Chai</div>
+    </div>
+    <div class="food-item">
+      <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=500&q=85" alt="Butter Naan">
+      <div class="food-cap"><small>Pão Artesanal</small>Butter Naan</div>
+    </div>
+  </div>
+  <p style="margin-top:1.5rem;font-size:.82rem;border-left:2px solid var(--teal);padding-left:1rem;">
+    <strong style="color:var(--cream);">Nota:</strong> O jantar no Chokhi Dhani é um banquete completo de culinária rajastanesa tradicional — incluso no pacote. Restrições alimentares são acomodadas com aviso prévio.
+  </p>
+</section>
+
+<!-- ═══════════════════════════════ FERNANDA ═══════════════════════════════ -->
+<div class="testimonial-section">
+  <div class="test-layout">
+    <div class="test-photos">
+      <div class="test-photos-grid">
+        <div class="test-photo main"><img src="/1.jpeg" alt="Fernanda na Índia"><div class="test-photo-overlay"></div></div>
+        <div class="test-photo"><img src="/5.jpeg" alt="Taj Mahal"><div class="test-photo-overlay"></div></div>
+        <div class="test-photo"><img src="/6.jpeg" alt="Jaipur"><div class="test-photo-overlay"></div></div>
+      </div>
+    </div>
+    <div class="test-content">
+      <span class="eyebrow" style="margin-bottom:1.2rem;display:block;">FERNANDA SILVA e a Ponte Brasil-Índia</span>
+      <span class="test-quote-mark">"</span>
+      <blockquote>Como psicanalista e praticante de meditação, sempre busquei o autoconhecimento. Mas foi na minha primeira viagem à Índia que entendi que o maior desafio não era apenas o destino, mas o medo do desconhecido.</blockquote>
+      <div class="test-divider"></div>
+      <div style="margin-bottom:1.5rem;line-height:1.7;color:var(--muted);">
+        <p>Sendo mulher e divorciada, senti na pele as incertezas que muitos viajantes — especialmente mulheres — enfrentam ao planejar uma jornada solo ou em casal para o Oriente.</p>
+        <p>Percebi que o que faltava não era apenas um guia, mas uma rede de apoio real.</p>
+        <p>Através da minha conexão profunda com parceiros indianos locais, decidi transformar minha experiência em missão: criar uma ponte segura, humana e profissional entre o Brasil e a magia da Índia.</p>
+        <p style="font-weight:500;">Aqui, você não é apenas um turista; você é guiado por quem entende suas emoções.</p>
+      </div>
+      <div class="test-divider"></div>
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;">
+        <img src="/1 - Copy.jpeg" alt="Fernanda" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1.5px solid var(--teal2);" onerror="this.style.display='none'">
+        <div>
+          <p class="test-name" style="margin:0;">Fernanda</p>
+          <p class="test-role" style="margin:0;">Guia de Turismo Brasileira · Especialista em Índia</p>
+        </div>
+      </div>
+      <div class="test-countries">
+        <span class="flag-pill">🇮🇳 Índia</span>
+        <span class="flag-pill">🏯 Rajastão</span>
+        <span class="flag-pill">🛕 Varanasi</span>
+        <span class="flag-pill">🚂 Rotas Ferroviárias</span>
+        <span class="flag-pill">🇧🇷 Guia Bilíngue</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ MOHIT ═══════════════════════════════ -->
+<div class="testimonial-section">
+  <div class="test-layout">
+    <div class="test-content">
+      <span class="eyebrow" style="margin-bottom:1.2rem;display:block;">Seu Guia Local na Índia</span>
+      <span class="test-quote-mark">"</span>
+      <blockquote>Nasci e cresci entre as montanhas sagradas de Himachal Pradesh, onde o ar do Himalaia carrega séculos de espiritualidade e tradição. Minha jornada não é apenas mostrar monumentos, mas abrir as portas da Índia que pulsa além dos cartões-postais.</blockquote>
+      <div class="test-divider"></div>
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;">
+        <img src="/mohit-photo.jpeg" alt="Mohit" style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:1.5px solid var(--teal2);" onerror="this.style.display='none'">
+        <div>
+          <p class="test-name" style="margin:0;">Mohit</p>
+          <p class="test-role" style="margin:0;">Guia Local Indiano · Nascido em Jaipur</p>
+        </div>
+      </div>
+      <div class="test-countries">
+        <span class="flag-pill">🇮🇳 Nativo Indiano</span>
+        <span class="flag-pill">🛕 Varanasi</span>
+        <span class="flag-pill">🏯 Jaipur</span>
+        <span class="flag-pill">🐘 Rajastão Profundo</span>
+      </div>
+    </div>
+    <div class="test-photos">
+      <div class="test-photos-grid">
+        <div class="test-photo main"><img src="/99.jpeg" alt="Mohit em Jaipur"><div class="test-photo-overlay"></div></div>
+        <div class="test-photo"><img src="/2.jpeg" alt="Templo Indiano"><div class="test-photo-overlay"></div></div>
+        <div class="test-photo"><img src="/555.jpeg" alt="Mohit guiando turistas"><div class="test-photo-overlay"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ PRICING ═══════════════════════════════ -->
+<section class="sec" id="reserva">
+  <span class="eyebrow">💰 Investimento</span>
+  <div class="rule" style="margin-top:.8rem;"><div class="rule-dot"></div></div>
+  <h2 style="margin-bottom:2.5rem;">Como Reservar Sua Vaga</h2>
+  <div class="pricing-wrap">
+    <div class="pricing-head">
+      <h3>Pacote Completo por Pessoa</h3>
+      <span>✈️ Inclui Voos Internacionais + 🚂 Trem</span>
+    </div>
+    <div class="pricing-body">
+      <div class="price-display">
+        <span class="price-currency">R$</span>
+        <span class="price-amount">19.500</span>
+        <span class="price-period">/ por pessoa</span>
+      </div>
+      <p class="price-note">Pacote completo incluindo voos, hotéis em 4 cidades, trem histórico, transporte privativo, ingressos de todos os monumentos, experiências guiadas, cerimônia Ganga Aarti e jantar rajastanês.</p>
+      <div class="deposit-row">
+        <div class="deposit-lbl">
+          <h4>✅ Depósito de Reserva</h4>
+          <p>Confirma sua vaga · Reserva do voo · Bloqueio do hotel</p>
+        </div>
+        <span class="deposit-amt">R$ 3.000</span>
+      </div>
+      <span style="font-family:'Jost';font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--teal2);display:block;margin-bottom:.7rem;">Vagas no Grupo — máx. 10 viajantes</span>
+      <div class="seats-row">
+        <div class="seats-dots">
+          <div class="seat"></div><div class="seat"></div><div class="seat"></div>
+          <div class="seat open"></div><div class="seat open"></div><div class="seat open"></div>
+          <div class="seat open"></div><div class="seat open"></div><div class="seat open"></div>
+          <div class="seat open"></div>
+        </div>
+        <span class="seats-note">● Ocupadas &nbsp; ○ Disponíveis — Reserve antes que esgotem!</span>
+      </div>
+      <div class="steps-row" style="margin-top:2rem;">
+        <div class="step-item">
+          <div class="step-n">01</div>
+          <h4>Confirmação</h4>
+          <p>Depósito de R$ 3.000 por pessoa confirma:</p>
+          <ul><li>Sua vaga no grupo</li><li>Processo de reserva do voo</li><li>Bloqueio dos hotéis</li><li>Reserva do trem</li></ul>
+        </div>
+        <div class="step-item">
+          <div class="step-n">02</div>
+          <h4>Pagamento</h4>
+          <p>O saldo restante pode ser pago em parcelas antes da partida. Nossa equipe irá auxiliá-lo pessoalmente no planejamento.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-n">03</div>
+          <h4>Preparação</h4>
+          <ul><li>Orientações sobre o visto</li><li>Suporte de preparação</li><li>Pacote completo de informações</li><li>Contato direto com Fernanda e Mohit</li></ul>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="#contato" class="btn">
+          <i class="ph ph-envelope" style="font-size:1rem;"></i>
+          Entre em Contato e Reserve Agora
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ POR QUE RESERVAR CEDO ═══════════════════════════════ -->
+<section class="sec" style="padding-top:0;">
+  <span class="eyebrow">❤️ Por Que Reservar Cedo?</span>
+  <div class="rule" style="margin-top:.8rem;"><div class="rule-dot"></div></div>
+  <h2>Não perca esta oportunidade</h2>
+  <div class="why-grid">
+    <div class="why-item">
+      <i class="ph ph-trend-up" style="font-size:1.6rem;color:var(--teal);"></i>
+      <h4>Preços de Voo</h4>
+      <p>Os preços das passagens aumentam conforme a data de embarque se aproxima. Reserve agora e garanta o melhor valor.</p>
+    </div>
+    <div class="why-item">
+      <i class="ph ph-train" style="font-size:1.6rem;color:var(--teal);"></i>
+      <h4>Vagas no Trem Limitadas</h4>
+      <p>As passagens de trem na Índia se esgotam rapidamente. Garantir cedo assegura os melhores assentos.</p>
+    </div>
+    <div class="why-item">
+      <i class="ph ph-bed" style="font-size:1.6rem;color:var(--teal);"></i>
+      <h4>Disponibilidade Hoteleira</h4>
+      <p>Hotéis próximos aos ghats e monumentos são muito disputados. Garanta suas acomodações antecipadamente.</p>
+    </div>
+    <div class="why-item">
+      <i class="ph ph-users" style="font-size:1.6rem;color:var(--teal);"></i>
+      <h4>Grupo Reduzido</h4>
+      <p>Apenas 10 viajantes. Cada vaga é preciosa — quando esgotarem, não haverá lista de espera.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CULTURA ═══════════════════════════════ -->
+<section class="culture-section">
+  <span class="eyebrow">🕉️ Espiritualidade & Cultura</span>
+  <div class="rule" style="margin-top:.8rem;"><div class="rule-dot"></div></div>
+  <h2>A alma de uma <em class="serif" style="color:var(--teal2);font-style:italic;">civilização milenar</em></h2>
+  <p style="max-width:680px;margin-top:.8rem;">Além dos monumentos, a Índia revela sua essência através da espiritualidade, da arte, dos rituais e da filosofia que moldaram o mundo. E Varanasi é o epicentro de tudo isso — uma cidade onde o sagrado e o cotidiano coexistem há milênios.</p>
+  <div class="culture-grid">
+    <div class="culture-item wide">
+      <img src="https://www.lasociedadgeografica.com/blog/uploads/isha-yoga-center-yoga.jpeg" alt="Yoga India">
+      <span class="culture-tag">Bem-Estar</span>
+      <div class="culture-cap"><small>Prática Milenar</small><h4>Yoga na Terra que o Criou</h4></div>
+    </div>
+    <div class="culture-item tall">
+      <img src="https://media.architecturaldigest.com/photos/65381835a4c2527dfe21a0ef/master/w_1600%2Cc_limit/GettyImages-1718465939.jpg" alt="Hindu Temple">
+      <span class="culture-tag">Espiritualidade</span>
+      <div class="culture-cap"><small>Sagrado</small><h4>Templos Hindus</h4></div>
+    </div>
+    <div class="culture-item">
+      <img src="https://1.bp.blogspot.com/-LCVBBnWnEnQ/XpA21-kkPHI/AAAAAAABhqM/CLVd3rewMmQ0YRR00BH23Y49tcskAFOUgCLcBGAsYHQ/s1600/2019-12-07%2B%25281%2529.jpg" alt="Ganesha">
+      <span class="culture-tag">Divindades</span>
+      <div class="culture-cap"><small>Deus da Prosperidade</small><h4>Ganesha</h4></div>
+    </div>
+    <div class="culture-item">
+      <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&q=85" alt="Indian Dance">
+      <span class="culture-tag">Arte</span>
+      <div class="culture-cap"><small>Dança Clássica</small><h4>Bharatanatyam</h4></div>
+    </div>
+    <div class="culture-item">
+      <img src="https://i.ytimg.com/vi/AFndBrp6Iqs/maxresdefault.jpg" alt="Meditation">
+      <span class="culture-tag">Meditação</span>
+      <div class="culture-cap"><small>Paz Interior</small><h4>Meditação & Mantra</h4></div>
+    </div>
+    <div class="culture-item">
+      <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=500&q=85" alt="Colors India">
+      <span class="culture-tag">Festival</span>
+      <div class="culture-cap"><small>Cores da Índia</small><h4>Arte & Rangoli</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+<div class="contact-section" id="contato">
+  <div class="contact-inner">
+    <span class="eyebrow">📲 Fale Conosco</span>
+    <div class="rule" style="margin-top:.8rem;"><div class="rule-dot"></div></div>
+    <h2>Entre em contato e <em class="serif" style="color:var(--teal2);font-style:italic;">reserve agora</em></h2>
+    <p style="max-width:540px;margin:.9rem auto 0;">Nossa equipe está disponível para responder todas as suas dúvidas e ajudar a garantir sua vaga. Fale diretamente com Fernanda (Brasil) ou Mohit (Índia).</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <span class="contact-card-flag">🇧🇷</span>
+        <div class="contact-card-name">Fernanda Almeida Silva</div>
+        <span class="contact-card-role">Guia de Turismo Brasileira · Coordenadora da Viagem</span>
+        <div class="contact-card-detail"><i class="ph ph-phone"></i>+55 11 94772-7979</div>
+        <div class="contact-card-detail"><i class="ph ph-map-pin"></i>Brasil — São Paulo</div>
+        <div class="contact-card-detail"><i class="ph ph-globe"></i>Atende em Português</div>
+        <a href="https://wa.me/5511947727979?text=Ol%C3%A1%20Fernanda!%20Tenho%20interesse%20na%20viagem%20%C3%8Dndia%20Julho%202026%20com%20Varanasi.%20Poderia%20me%20dar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" class="wa-btn">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chamar Fernanda no WhatsApp
+        </a>
+      </div>
+      <div class="contact-card">
+        <span class="contact-card-flag">🇮🇳</span>
+        <div class="contact-card-name">Mohit</div>
+        <span class="contact-card-role">Anfitrião & Guia Local Indiano · Coordenador na Índia</span>
+        <div class="contact-card-detail"><i class="ph ph-phone"></i>+91 98725 67925</div>
+        <div class="contact-card-detail"><i class="ph ph-map-pin"></i>Índia — Rajastão / Delhi / Varanasi</div>
+        <div class="contact-card-detail"><i class="ph ph-globe"></i>Atende em Inglês & Hindi</div>
+        <a href="https://wa.me/919872567925?text=Hello%20Mohit!%20I%20am%20interested%20in%20the%20India%20July%202026%20trip%20with%20Varanasi.%20Could%20you%20share%20more%20information%3F" target="_blank" class="wa-btn">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chamar Mohit no WhatsApp
+        </a>
+      </div>
+    </div>
+    <p style="margin-top:2.5rem;font-family:'Jost',sans-serif;font-size:.78rem;color:rgba(238,244,245,.3);letter-spacing:.08em;text-align:center;">✦ &nbsp; Respondemos em até 24 horas &nbsp; ✦</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <img src="/logo.png" alt="Roteiros India" class="footer-logo" onerror="this.style.display='none'">
+      <div class="footer-brand">Roteiros India</div>
+      <p class="footer-tagline">Descubra a Cultura, Viva a Aventura</p>
+      <p class="footer-meta">
+        Índia: Verão Sagrado · Julho 2026<br>
+        1 a 11 de Julho de 2026 · 11 Dias<br>
+        Delhi · Agra · Varanasi · Jaipur · Trem Histórico<br>
+        Máximo 10 Viajantes · R$ 19.500 por pessoa
+      </p>
+    </div>
+    <div class="footer-contacts">
+      <p style="font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;color:var(--teal2);margin-bottom:.6rem;">Contatos</p>
+      <div class="footer-contact-item"><i class="ph ph-flag"></i>Fernanda Almeida Silva</div>
+      <div class="footer-contact-item"><i class="ph ph-phone"></i>+55 11 94772-7979</div>
+      <div class="footer-contact-item" style="margin-top:.5rem;"><i class="ph ph-person-simple-walk"></i>Mohit (Índia)</div>
+      <div class="footer-contact-item"><i class="ph ph-phone"></i>+91 98725 67925</div>
+      <div style="display:flex;gap:.6rem;margin-top:1rem;flex-wrap:wrap;">
+        <a href="https://wa.me/5511947727979" target="_blank" class="wa-btn" style="padding:.5rem 1rem;font-size:.72rem;">
+          <svg viewBox="0 0 24 24" style="width:14px;height:14px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          🇧🇷 BR
+        </a>
+        <a href="https://wa.me/919872567925" target="_blank" class="wa-btn" style="padding:.5rem 1rem;font-size:.72rem;">
+          <svg viewBox="0 0 24 24" style="width:14px;height:14px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          🇮🇳 IN
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Roteiros India · Todos os direitos reservados</p>
+    <p>🇧🇷 Uma experiência exclusiva para viajantes brasileiros 🇮🇳</p>
+  </div>
+</footer>
+
+</div><!-- /page-content -->
+
+<script>
+// ── HOTEL PHOTO CAROUSELS ──
+document.querySelectorAll('.hotel-card').forEach(card => {
+  const track   = card.querySelector('.hotel-photo-track');
+  const slides  = card.querySelectorAll('.hotel-photo-slide');
+  const dots    = card.querySelectorAll('.hotel-dot');
+  const counter = card.querySelector('.hotel-photo-count');
+  const prevBtn = card.querySelector('.hotel-arrow.prev');
+  const nextBtn = card.querySelector('.hotel-arrow.next');
+  const total   = slides.length;
+  let current   = 0;
+
+  function goTo(idx) {
+    current = (idx + total) % total;
+    track.scrollTo({ left: current * track.clientWidth, behavior: 'smooth' });
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    if (counter) counter.textContent = `${current + 1} / ${total}`;
+  }
+
+  prevBtn.addEventListener('click', e => { e.stopPropagation(); goTo(current - 1); });
+  nextBtn.addEventListener('click', e => { e.stopPropagation(); goTo(current + 1); });
+  dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+  // Drag to scroll
+  let startX = 0, scrollStart = 0, dragging = false;
+  track.addEventListener('mousedown', e => {
+    dragging = true; startX = e.pageX; scrollStart = track.scrollLeft;
+    track.classList.add('is-dragging');
+  });
+  track.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    track.scrollLeft = scrollStart - (e.pageX - startX);
+  });
+  track.addEventListener('mouseup',   () => { dragging = false; track.classList.remove('is-dragging'); snapToCurrent(); });
+  track.addEventListener('mouseleave',() => { if(dragging){ dragging = false; track.classList.remove('is-dragging'); snapToCurrent(); } });
+
+  // Touch swipe
+  let touchStartX = 0;
+  track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive:true });
+  track.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+  });
+
+  // Sync dots on scroll
+  function snapToCurrent() {
+    const idx = Math.round(track.scrollLeft / track.clientWidth);
+    if (idx !== current) goTo(idx);
+  }
+  track.addEventListener('scroll', () => {
+    clearTimeout(track._st);
+    track._st = setTimeout(snapToCurrent, 80);
+  });
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.inc-item, .hotel-card, .why-item, .step-item, .ps, .food-item, .culture-item, .contact-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(16px)';
+  el.style.transition = 'opacity .55s ease, transform .55s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
