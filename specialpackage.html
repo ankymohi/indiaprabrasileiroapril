@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposta Especial para Vocês — Índia Diwali 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&family=Jost:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{
+  font-family:'Jost',sans-serif;
+  background:#080400;
+  color:#F0E6D0;
+  overflow-x:hidden;
+  line-height:1.7;
+}
+
+:root{
+  --saffron:#E8520A;
+  --saffron2:#F27030;
+  --gold:#C9930A;
+  --gold2:#E8B740;
+  --cream:#F0E6D0;
+  --muted:rgba(240,230,208,.6);
+  --ink:#080400;
+  --ink2:#120900;
+  --border:rgba(201,147,10,.22);
+  --red:#c0392b;
+}
+
+/* ─── COUNTDOWN BANNER ─── */
+.urgency-bar{
+  background:linear-gradient(135deg,#8B1A1A,#c0392b,#8B1A1A);
+  background-size:300% 100%;
+  animation:barAnim 4s linear infinite;
+  padding:.7rem 1.5rem;
+  text-align:center;
+  position:sticky;top:0;z-index:999;
+}
+@keyframes barAnim{to{background-position:300% 0}}
+.urgency-bar p{
+  font-family:'Jost',sans-serif;
+  font-size:.75rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:#fff;
+}
+.urgency-bar strong{color:#FFD700;}
+
+/* ─── HERO ─── */
+.hero{
+  min-height:100vh;
+  position:relative;
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?w=1800&q=85');
+  background-size:cover;background-position:center 30%;
+}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(8,4,0,.5) 0%,rgba(8,4,0,.45) 40%,rgba(8,4,0,.92) 100%);
+}
+/* floating diyas */
+.diya-float{
+  position:absolute;border-radius:50%;
+  background:radial-gradient(circle,#FFD97A,#E07B00);
+  animation:diyaPulse var(--dur,3s) ease-in-out infinite;
+  animation-delay:var(--del,0s);
+  z-index:1;
+}
+@keyframes diyaPulse{0%,100%{box-shadow:0 0 8px 4px rgba(232,183,64,.7),0 0 20px 8px rgba(232,83,10,.3);opacity:.9;}50%{box-shadow:0 0 16px 8px rgba(232,183,64,.9),0 0 40px 14px rgba(232,83,10,.5);opacity:1;}}
+
+.hero-inner{
+  position:relative;z-index:2;
+  padding:2rem 1.5rem;
+  max-width:900px;width:100%;
+  display:flex;flex-direction:column;align-items:center;gap:1rem;
+}
+.personal-tag{
+  background:rgba(232,183,64,.12);
+  border:1px solid rgba(232,183,64,.4);
+  border-radius:100px;
+  padding:.5rem 1.6rem;
+  font-family:'Jost',sans-serif;
+  font-size:.72rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;
+  color:var(--gold2);
+}
+.hero h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.5rem,8vw,6.5rem);
+  color:#fff;
+  line-height:1.05;
+  text-shadow:0 2px 30px rgba(8,4,0,.7);
+}
+.hero h1 em{
+  display:block;
+  font-style:italic;
+  color:var(--gold2);
+  font-size:.55em;
+  letter-spacing:.04em;
+}
+.hero-names{
+  font-family:'Cinzel',serif;
+  font-size:clamp(1.1rem,3vw,1.8rem);
+  color:rgba(255,255,255,.9);
+  letter-spacing:.15em;
+}
+.hero-names span{color:var(--gold2);}
+.couple-hearts{font-size:1.5rem;margin:0 .5rem;}
+
+.hero-sub{
+  font-size:clamp(.9rem,2vw,1.05rem);
+  color:rgba(240,230,208,.8);
+  letter-spacing:.05em;
+  max-width:600px;
+}
+.hero-cta{
+  margin-top:.8rem;
+  display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;
+}
+
+/* ─── BUTTONS ─── */
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.85rem 2.2rem;
+  background:var(--saffron);
+  color:#fff;font-family:'Jost',sans-serif;font-size:.82rem;
+  font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  border:none;cursor:pointer;border-radius:2px;
+  text-decoration:none;
+  transition:background .25s,transform .2s,box-shadow .2s;
+  box-shadow:0 6px 24px rgba(232,82,10,.35);
+}
+.btn:hover{background:var(--saffron2);transform:translateY(-2px);box-shadow:0 10px 32px rgba(232,82,10,.5);}
+.btn-wa{background:#25D366;box-shadow:0 6px 24px rgba(37,211,102,.3);}
+.btn-wa:hover{background:#1ebe5d;box-shadow:0 10px 32px rgba(37,211,102,.45);}
+
+/* ─── SECTIONS ─── */
+.sec{padding:5rem 1.5rem;max-width:1040px;margin:0 auto;}
+.eyebrow{font-family:'Jost',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.4em;text-transform:uppercase;color:var(--gold2);}
+.rule{display:flex;align-items:center;gap:1rem;margin:.7rem 0 1.4rem;}
+.rule::before,.rule::after{content:'';flex:1;height:1px;background:var(--border);}
+.rule-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4.5vw,3rem);font-weight:700;color:var(--cream);line-height:1.1;}
+h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,3vw,1.9rem);font-weight:700;color:var(--cream);}
+
+/* ─── COUPLE INTRO ─── */
+.couple-section{
+  padding:5rem 1.5rem;
+  background:var(--ink2);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  text-align:center;
+}
+.couple-section .inner{max-width:700px;margin:0 auto;}
+.couple-icon{
+  width:80px;height:80px;border-radius:50%;
+  background:rgba(232,183,64,.08);
+  border:1px solid rgba(232,183,64,.3);
+  display:flex;align-items:center;justify-content:center;
+  font-size:2.2rem;
+  margin:0 auto 1.5rem;
+}
+.couple-section h2{margin-bottom:1.2rem;}
+.couple-section p{color:var(--muted);font-size:1rem;line-height:1.9;max-width:580px;margin:0 auto .9rem;}
+
+/* ─── BIG PRICE BOX ─── */
+.price-section{
+  position:relative;overflow:hidden;
+  padding:5rem 1.5rem;
+}
+.price-bg{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,#1a0800 0%,#0d0600 40%,#1f0a00 100%);
+}
+.price-glow-tl{position:absolute;width:500px;height:500px;border-radius:50%;background:var(--saffron);filter:blur(120px);opacity:.08;top:-150px;left:-150px;pointer-events:none;}
+.price-glow-br{position:absolute;width:400px;height:400px;border-radius:50%;background:var(--gold);filter:blur:100px;opacity:.06;bottom:-100px;right:-100px;pointer-events:none;}
+
+.price-inner{position:relative;z-index:2;max-width:900px;margin:0 auto;}
+
+/* Compare table */
+.compare-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem;
+}
+@media(max-width:640px){.compare-grid{grid-template-columns:1fr;}}
+
+.price-card{
+  border:1px solid var(--border);border-radius:4px;overflow:hidden;
+  transition:box-shadow .3s,border-color .3s;
+  background:rgba(255,255,255,.02);
+}
+.price-card.featured{
+  border-color:rgba(232,183,64,.55);
+  box-shadow:0 0 60px rgba(232,183,64,.12),0 20px 60px rgba(0,0,0,.4);
+}
+.price-card-head{
+  padding:1.4rem 1.8rem;
+  border-bottom:1px solid var(--border);
+}
+.price-card.regular .price-card-head{background:rgba(255,255,255,.03);}
+.price-card.featured .price-card-head{
+  background:linear-gradient(135deg,rgba(232,82,10,.18),rgba(201,147,10,.1));
+}
+.price-card-head .label{
+  font-family:'Jost',sans-serif;font-size:.6rem;font-weight:700;
+  letter-spacing:.3em;text-transform:uppercase;color:var(--gold2);display:block;margin-bottom:.5rem;
+}
+.price-card-head h3{font-size:1.1rem;color:var(--cream);}
+
+.price-card-body{padding:1.8rem 1.8rem 2rem;}
+
+.old-price{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.5rem;color:rgba(240,230,208,.25);
+  text-decoration:line-through;
+  line-height:1;margin-bottom:.3rem;
+  display:block;
+}
+.new-price{
+  display:flex;align-items:baseline;gap:.4rem;margin-bottom:.4rem;
+}
+.new-price .currency{font-family:'Jost',sans-serif;font-size:1.2rem;font-weight:700;color:var(--gold2);}
+.new-price .amount{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:700;color:var(--cream);line-height:1;}
+.new-price .period{font-size:.82rem;color:var(--muted);}
+
+.saving-badge{
+  display:inline-flex;align-items:center;gap:.4rem;
+  background:rgba(232,82,10,.15);
+  border:1px solid rgba(232,82,10,.4);
+  border-radius:100px;
+  padding:.3rem .9rem;
+  font-family:'Jost',sans-serif;font-size:.72rem;font-weight:700;
+  color:#F4793A;letter-spacing:.05em;
+  margin-bottom:1.2rem;
+}
+.price-note{font-size:.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.4rem;}
+
+.price-list{list-style:none;padding:0;}
+.price-list li{
+  font-size:.85rem;color:rgba(240,230,208,.75);
+  padding:.3rem 0 .3rem 1.3rem;position:relative;line-height:1.6;
+  border-bottom:1px solid rgba(201,147,10,.08);
+}
+.price-list li:last-child{border-bottom:none;}
+.price-list li::before{content:'✓';position:absolute;left:0;color:var(--saffron);font-size:.75rem;top:.35rem;}
+.price-list li strong{color:var(--gold2);}
+
+/* DISCOUNT HIGHLIGHT */
+.discount-hl{
+  background:linear-gradient(135deg,rgba(232,82,10,.12),rgba(201,147,10,.08));
+  border:1px solid rgba(232,183,64,.3);
+  border-radius:4px;
+  padding:2rem 2rem;
+  margin-top:2.5rem;
+  text-align:center;
+}
+.discount-hl .big-num{
+  font-family:'Cinzel',serif;
+  font-size:clamp(2.5rem,6vw,4.5rem);
+  font-weight:700;
+  background:linear-gradient(135deg,var(--gold2),var(--saffron2),var(--gold2));
+  background-size:200%;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  animation:shimmer 3s linear infinite;
+  line-height:1;
+}
+@keyframes shimmer{to{background-position:200% center;}}
+.discount-hl p{font-size:.9rem;color:var(--muted);margin-top:.6rem;max-width:500px;margin-left:auto;margin-right:auto;}
+
+/* ─── DEPOSIT SECTION ─── */
+.deposit-section{
+  background:var(--ink2);
+  padding:5rem 1.5rem;
+  border-top:1px solid var(--border);
+}
+.deposit-inner{max-width:780px;margin:0 auto;text-align:center;}
+.deposit-cards{
+  display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;
+  margin-top:2.5rem;
+}
+@media(max-width:580px){.deposit-cards{grid-template-columns:1fr;}}
+.dep-card{
+  border:1px solid var(--border);border-radius:4px;
+  padding:1.8rem 1.6rem;
+  background:rgba(255,255,255,.02);
+  position:relative;overflow:hidden;
+  transition:border-color .3s,box-shadow .3s;
+}
+.dep-card:hover{border-color:rgba(232,183,64,.45);box-shadow:0 12px 40px rgba(0,0,0,.3);}
+.dep-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--saffron),var(--gold));}
+.dep-card .step-n{font-family:'Cinzel',serif;font-size:2rem;font-weight:700;color:rgba(232,82,10,.25);line-height:1;margin-bottom:.5rem;}
+.dep-card h4{font-family:'Jost',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--cream);margin-bottom:.5rem;}
+.dep-card p{font-size:.85rem;color:var(--muted);}
+.dep-amount{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:var(--cream);display:block;margin-top:.6rem;}
+.dep-amount small{font-family:'Jost',sans-serif;font-size:.75rem;color:var(--muted);}
+
+/* ─── PAYMENT OPTIONS ─── */
+.payment-section{padding:5rem 1.5rem;max-width:1040px;margin:0 auto;}
+.payment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem;}
+@media(max-width:700px){.payment-grid{grid-template-columns:1fr;}}
+.pay-card{
+  border:1px solid var(--border);border-radius:4px;
+  padding:1.6rem;
+  background:rgba(255,255,255,.02);
+  text-align:center;
+  transition:border-color .3s,transform .2s;
+}
+.pay-card:hover{border-color:rgba(232,183,64,.4);transform:translateY(-4px);}
+.pay-icon{font-size:2rem;display:block;margin-bottom:.8rem;}
+.pay-card h4{font-family:'Jost',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);margin-bottom:.5rem;}
+.pay-card p{font-size:.82rem;color:var(--muted);}
+.pay-highlight{color:var(--gold2);font-weight:600;}
+
+/* ─── COUNTDOWN ─── */
+.countdown-section{
+  position:relative;overflow:hidden;
+  padding:5rem 1.5rem;
+  text-align:center;
+  background:linear-gradient(180deg,rgba(139,26,26,.15) 0%,rgba(8,4,0,0) 100%);
+  border-top:1px solid rgba(192,57,43,.25);
+  border-bottom:1px solid rgba(192,57,43,.25);
+}
+.countdown-section::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 80% at 50% 50%,rgba(192,57,43,.06),transparent);
+}
+.countdown-inner{position:relative;z-index:1;max-width:700px;margin:0 auto;}
+.countdown-label{
+  font-family:'Jost',sans-serif;font-size:.65rem;font-weight:700;
+  letter-spacing:.35em;text-transform:uppercase;color:#e74c3c;
+  display:block;margin-bottom:1.2rem;
+}
+.countdown-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.6rem,4vw,2.6rem);font-weight:700;color:var(--cream);
+  margin-bottom:.5rem;
+}
+.countdown-sub{font-size:.88rem;color:var(--muted);margin-bottom:2rem;}
+.timer{display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem;}
+.timer-unit{
+  display:flex;flex-direction:column;align-items:center;
+  min-width:80px;
+}
+.timer-num{
+  font-family:'Cinzel',serif;
+  font-size:clamp(2rem,5vw,3.5rem);font-weight:700;
+  color:var(--cream);line-height:1;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(192,57,43,.3);
+  border-radius:4px;
+  padding:.5rem 1rem;
+  min-width:80px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.timer-num::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(192,57,43,.08),transparent);
+}
+.timer-lbl{font-family:'Jost',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(192,57,43,.8);margin-top:.4rem;}
+.seats-visual{display:flex;justify-content:center;gap:.5rem;flex-wrap:wrap;margin-bottom:1.2rem;}
+.seat{
+  width:18px;height:18px;border-radius:3px;
+  background:var(--saffron);
+  position:relative;
+}
+.seat::before{content:'';position:absolute;top:2px;left:50%;transform:translateX(-50%);width:8px;height:5px;background:rgba(0,0,0,.2);border-radius:2px;}
+.seat.taken{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.1);}
+.seats-label{font-size:.78rem;color:var(--muted);text-align:center;margin-bottom:1.8rem;}
+.seats-label strong{color:#e74c3c;}
+
+/* ─── WHAT'S INCLUDED ─── */
+.included-section{
+  padding:5rem 1.5rem;
+  background:var(--ink2);
+}
+.included-inner{max-width:1040px;margin:0 auto;}
+.inc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:2.5rem;}
+@media(max-width:800px){.inc-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:420px){.inc-grid{grid-template-columns:1fr 1fr;}}
+.inc-item{
+  padding:1.6rem 1.2rem;
+  background:rgba(255,255,255,.02);
+  border:1px solid var(--border);
+  transition:background .3s,border-color .3s;
+  position:relative;overflow:hidden;
+}
+.inc-item::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--saffron),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .3s;}
+.inc-item:hover::before{transform:scaleX(1);}
+.inc-item:hover{background:rgba(232,183,64,.04);border-color:rgba(232,183,64,.3);}
+.inc-item .icon{font-size:1.6rem;display:block;margin-bottom:.7rem;}
+.inc-item h4{font-family:'Jost',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);margin-bottom:.4rem;}
+.inc-item p{font-size:.78rem;color:var(--muted);}
+
+/* ─── COUPLE COMFORT ─── */
+.comfort-section{padding:5rem 1.5rem;max-width:1040px;margin:0 auto;}
+.comfort-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.5rem;}
+@media(max-width:700px){.comfort-grid{grid-template-columns:1fr;}}
+.comfort-card{
+  border:1px solid var(--border);border-radius:4px;
+  overflow:hidden;background:var(--ink2);
+  transition:border-color .3s,box-shadow .3s;
+}
+.comfort-card:hover{border-color:rgba(232,183,64,.45);box-shadow:0 12px 40px rgba(0,0,0,.3);}
+.comfort-card-img{
+  height:220px;overflow:hidden;position:relative;
+}
+.comfort-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s;filter:brightness(.8);}
+.comfort-card:hover .comfort-card-img img{transform:scale(1.05);}
+.comfort-card-img .overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,4,0,.7),transparent 60%);}
+.comfort-card-info{padding:1.6rem;}
+.comfort-card-info h4{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:700;color:var(--cream);margin-bottom:.5rem;}
+.comfort-card-info p{font-size:.84rem;color:var(--muted);}
+.comfort-badge{
+  display:inline-flex;align-items:center;gap:.3rem;
+  background:rgba(232,183,64,.08);
+  border:1px solid rgba(232,183,64,.25);
+  border-radius:100px;
+  padding:.2rem .7rem;margin-top:.8rem;
+  font-family:'Jost',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold2);
+}
+
+/* ─── CTA BLOCK ─── */
+.cta-section{
+  position:relative;overflow:hidden;
+  padding:6rem 1.5rem;text-align:center;
+  background:linear-gradient(135deg,#1a0800,#0d0600,#1f0a00);
+}
+.cta-bg-img{
+  position:absolute;inset:0;
+  background-image:url('https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1400&q=80');
+  background-size:cover;background-position:center;opacity:.15;
+}
+.cta-inner{position:relative;z-index:1;max-width:700px;margin:0 auto;}
+.cta-diyas{display:flex;justify-content:center;gap:1.5rem;margin-bottom:2rem;}
+.cta-diya{width:10px;height:10px;border-radius:50%;background:var(--gold2);box-shadow:0 0 8px 4px rgba(232,183,64,.7),0 0 20px 8px rgba(232,83,10,.4);position:relative;animation:diyaPulse 2s ease-in-out infinite;animation-delay:var(--d,0s);}
+.cta-diya::after{content:'';position:absolute;bottom:100%;left:50%;transform:translateX(-50%);width:2px;height:12px;background:linear-gradient(rgba(232,183,64,.8),transparent);border-radius:1px;}
+.cta-section h2{margin-bottom:1rem;}
+.cta-section p{font-size:1rem;color:rgba(240,230,208,.75);max-width:500px;margin:0 auto 2rem;}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+
+/* ─── FOOTER ─── */
+footer{
+  border-top:1px solid var(--border);
+  background:rgba(0,0,0,.5);
+  padding:3rem 1.5rem 2rem;
+  text-align:center;
+}
+footer p{font-size:.75rem;color:rgba(240,230,208,.25);line-height:1.8;}
+footer strong{color:var(--gold2);}
+.footer-logo{font-family:'Cinzel',serif;font-size:1.2rem;font-weight:600;color:var(--gold2);letter-spacing:.2em;display:block;margin-bottom:.5rem;}
+
+/* ─── ANIMATE IN ─── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* ─── SCROLL LINE ─── */
+.scroll-cue{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:.5rem;}
+.scroll-cue span{font-size:.58rem;letter-spacing:.35em;color:var(--gold2);text-transform:uppercase;}
+.scroll-line{width:1px;height:36px;background:linear-gradient(var(--gold2),transparent);}
+</style>
+</head>
+<body>
+
+<!-- URGENCY BAR -->
+<div class="urgency-bar">
+  <p>🔥 <strong>OFERTA EXCLUSIVA · VÁLIDA POR 5 DIAS APENAS</strong> · Outra reserva em andamento · <strong>Vagas se esgotando!</strong> 🔥</p>
+</div>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <!-- Floating diyas -->
+  <div class="diya-float" style="width:12px;height:12px;left:8%;top:20%;--dur:3.2s;--del:0s;"></div>
+  <div class="diya-float" style="width:9px;height:9px;left:15%;top:65%;--dur:4s;--del:.8s;"></div>
+  <div class="diya-float" style="width:14px;height:14px;right:10%;top:25%;--dur:3.5s;--del:.3s;"></div>
+  <div class="diya-float" style="width:8px;height:8px;right:18%;top:70%;--dur:4.5s;--del:1.2s;"></div>
+  <div class="diya-float" style="width:11px;height:11px;left:50%;top:10%;--dur:3.8s;--del:.5s;"></div>
+
+  <div class="hero-inner">
+    <span class="personal-tag">🪔 Proposta Exclusiva · Casal Especial</span>
+
+    <h1 class="serif">
+      Índia
+      <em>para Vocês Dois</em>
+    </h1>
+
+    <p class="hero-names">
+      Uma jornada inesquecível<span class="couple-hearts"> 💑 </span>para o casal
+    </p>
+
+    <p class="hero-sub">Diwali 2026 · 1–10 de Novembro · Delhi · Agra · Jaipur · Festival das Luzes</p>
+
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-top:.5rem;">
+      <span style="padding:.32rem .9rem;border:1px solid rgba(201,147,10,.4);border-radius:100px;font-size:.68rem;font-weight:700;letter-spacing:.1em;color:var(--gold2);text-transform:uppercase;">✈️ 2 Voos Incluídos</span>
+      <span style="padding:.32rem .9rem;border:1px solid rgba(201,147,10,.4);border-radius:100px;font-size:.68rem;font-weight:700;letter-spacing:.1em;color:var(--gold2);text-transform:uppercase;">🏨 Quarto Duplo</span>
+      <span style="padding:.32rem .9rem;border:1px solid rgba(201,147,10,.4);border-radius:100px;font-size:.68rem;font-weight:700;letter-spacing:.1em;color:var(--gold2);text-transform:uppercase;">💰 R$ 4.000 de Desconto</span>
+      <span style="padding:.32rem .9rem;border:1px solid rgba(192,57,43,.5);border-radius:100px;font-size:.68rem;font-weight:700;letter-spacing:.1em;color:#e74c3c;text-transform:uppercase;">⏳ Oferta: 5 Dias</span>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#reserva" class="btn">Ver Preço Especial do Casal</a>
+      <a href="https://wa.me/5511947727979" target="_blank" class="btn btn-wa">
+        <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Falar com Fernanda
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span>Veja a proposta</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+
+<!-- ═══════════ COUPLE INTRO ═══════════ -->
+<div class="couple-section reveal">
+  <div class="inner">
+    <div class="couple-icon">💑</div>
+    <span class="eyebrow">Preparado Especialmente para Vocês</span>
+    <h2 style="margin:.8rem 0 1.2rem;">Esta proposta foi criada<br><em style="color:var(--gold2);font-style:italic;">só para o casal</em></h2>
+    <p>Vocês dois merecem viver a Índia juntos — de forma confortável, segura e com total atenção personalizada. Por isso, criamos um pacote exclusivo para casal, com quarto duplo privativo, preço especial e um <strong style="color:var(--cream)">desconto de R$ 4.000</strong> que só está disponível se a reserva for confirmada dentro de <strong style="color:#e74c3c;">5 dias</strong>.</p>
+    <p>Fernanda acompanha vocês do Brasil à Índia. Mohit recebe o casal pessoalmente em Nova Delhi. Uma viagem de casal que vai unir vocês através da cultura mais rica e vibrante do mundo.</p>
+  </div>
+</div>
+
+
+<!-- ═══════════ COUNTDOWN ═══════════ -->
+<div class="countdown-section reveal" id="countdown-section">
+  <div class="countdown-inner">
+    <span class="countdown-label">⚠️ Atenção · Oferta com prazo</span>
+    <h2 class="countdown-title">Esta oferta exclusiva expira em:</h2>
+    <p class="countdown-sub">Após este prazo, o valor retorna ao preço original sem desconto</p>
+
+    <div class="timer">
+      <div class="timer-unit">
+        <div class="timer-num" id="t-days">05</div>
+        <div class="timer-lbl">Dias</div>
+      </div>
+      <div class="timer-unit">
+        <div class="timer-num" id="t-hours">00</div>
+        <div class="timer-lbl">Horas</div>
+      </div>
+      <div class="timer-unit">
+        <div class="timer-num" id="t-mins">00</div>
+        <div class="timer-lbl">Minutos</div>
+      </div>
+      <div class="timer-unit">
+        <div class="timer-num" id="t-secs">00</div>
+        <div class="timer-lbl">Segundos</div>
+      </div>
+    </div>
+
+    <div class="seats-visual">
+      <!-- 3 taken, 7 available (2 being considered for this couple) -->
+      <div class="seat" title="Ocupada"></div>
+      <div class="seat" title="Ocupada"></div>
+      <div class="seat" title="Ocupada"></div>
+      <div class="seat" style="background:rgba(232,183,64,.5);border:1px solid var(--gold2);" title="Vocês 💑"></div>
+      <div class="seat" style="background:rgba(232,183,64,.5);border:1px solid var(--gold2);" title="Vocês 💑"></div>
+      <div class="seat taken"></div>
+      <div class="seat taken"></div>
+      <div class="seat taken"></div>
+      <div class="seat taken"></div>
+      <div class="seat taken"></div>
+    </div>
+    <p class="seats-label">● Ocupadas &nbsp; 🟡 <strong>Reservadas para vocês (💑)</strong> &nbsp; ○ Disponíveis · <strong style="color:#e74c3c;">Outra reserva em andamento!</strong></p>
+
+    <a href="https://wa.me/5511947727979?text=Ol%C3%A1%20Fernanda!%20Quero%20confirmar%20a%20proposta%20especial%20para%20casal%20—%20Diwali%202026!" target="_blank" class="btn" style="font-size:.88rem;padding:1rem 2.5rem;">
+      🪔 Confirmar Vagas do Casal Agora
+    </a>
+  </div>
+</div>
+
+
+<!-- ═══════════ PRICING ═══════════ -->
+<div class="price-section" id="reserva">
+  <div class="price-bg"></div>
+  <div class="price-glow-tl"></div>
+  <div class="price-glow-br"></div>
+
+  <div class="price-inner">
+    <div style="text-align:center;" class="reveal">
+      <span class="eyebrow">💰 Investimento do Casal</span>
+      <div class="rule" style="max-width:280px;margin-left:auto;margin-right:auto;"><div class="rule-dot"></div></div>
+      <h2>Preço normal vs. <em style="color:var(--gold2);font-style:italic;">Sua Oferta</em></h2>
+      <p style="color:var(--muted);margin-top:.8rem;max-width:540px;margin-left:auto;margin-right:auto;">Calculado com transparência total — veja exatamente o que vocês ganham reservando agora.</p>
+    </div>
+
+    <div class="compare-grid reveal">
+
+      <!-- Regular price -->
+      <div class="price-card regular">
+        <div class="price-card-head">
+          <span class="label">Preço Normal · 2 Pessoas</span>
+          <h3>Pacote Padrão</h3>
+        </div>
+        <div class="price-card-body">
+          <span class="old-price">R$ 31.000</span>
+          <div style="font-size:.82rem;color:var(--muted);margin-bottom:1.2rem;line-height:1.7;">
+            2 × R$ 15.500 = R$ 31.000<br>
+            <span style="color:rgba(240,230,208,.4);">Voos ≈ R$ 13.000 · Pacote ≈ R$ 18.000</span>
+          </div>
+          <ul class="price-list">
+            <li>2 passagens aéreas internacionais incluídas</li>
+            <li>Hotéis 4★ (quartos separados)</li>
+            <li>Guias Fernanda + Mohit</li>
+            <li>Transporte privativo AC</li>
+            <li>Todos os ingressos incluídos</li>
+            <li>Celebração Diwali no Chokhi Dhani</li>
+            <li>Café da manhã incluso</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Couple offer -->
+      <div class="price-card featured">
+        <div class="price-card-head">
+          <span class="label">✨ Oferta Especial Casal · 5 Dias</span>
+          <h3>Pacote Casal com Desconto</h3>
+        </div>
+        <div class="price-card-body">
+          <span class="saving-badge">🎉 Economia de R$ 4.000 · Reserve em 5 dias!</span>
+          <div class="new-price">
+            <span class="currency">R$</span>
+            <span class="amount">27.000</span>
+            <span class="period">/ 2 pessoas</span>
+          </div>
+          <p class="price-note">
+            <strong style="color:var(--cream);">R$ 13.500 por pessoa</strong> — com tudo incluso. Voos + hotéis + experiências + Diwali + guias. Quarto duplo para o casal.
+          </p>
+          <ul class="price-list">
+            <li><strong>2 passagens aéreas internacionais</strong> incluídas</li>
+            <li><strong>Quarto Duplo Casal</strong> em todos os hotéis 4★</li>
+            <li>Guia brasileira Fernanda + Anfitrião Mohit</li>
+            <li>Transporte privativo AC exclusivo</li>
+            <li><strong>Todos os ingressos</strong> incluídos</li>
+            <li><strong>Noite Diwali</strong> no Chokhi Dhani + jantar incluso</li>
+            <li>Café da manhã incluso em todos os dias</li>
+            <li>Suporte 24h online e presencial</li>
+            <li>Sessão fotográfica profissional do casal</li>
+            <li>Kit boas-vindas especial para casal</li>
+          </ul>
+          <div style="margin-top:1.8rem;text-align:center;">
+            <a href="https://wa.me/5511947727979?text=Ol%C3%A1%20Fernanda!%20Quero%20confirmar%20a%20proposta%20casal%20Diwali%202026!" target="_blank" class="btn" style="width:100%;justify-content:center;">
+              Quero Este Pacote Casal!
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Discount highlight -->
+    <div class="discount-hl reveal">
+      <p style="font-family:'Jost',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--gold2);margin-bottom:.5rem;">ECONOMIA REAL CONFIRMADA</p>
+      <div class="big-num">R$ 4.000 de Desconto</div>
+      <p>R$ 31.000 → R$ 27.000 · Desconto exclusivo para casal que reservar dentro de 5 dias · Não cumulativo com outras promoções.</p>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ═══════════ DEPOSIT ═══════════ -->
+<div class="deposit-section reveal">
+  <div class="deposit-inner">
+    <span class="eyebrow">📋 Como Confirmar a Reserva</span>
+    <div class="rule" style="max-width:280px;margin-left:auto;margin-right:auto;"><div class="rule-dot"></div></div>
+    <h2>3 Passos Simples</h2>
+    <p style="color:var(--muted);margin-top:.8rem;max-width:500px;margin-left:auto;margin-right:auto;">Para garantir as vagas do casal com desconto, o processo é rápido e tranquilo.</p>
+
+    <div class="deposit-cards">
+
+      <div class="dep-card">
+        <div class="step-n">01</div>
+        <h4>✅ Sinal de Reserva do Casal</h4>
+        <p>Confirma as 2 vagas do casal com desconto, reserva dos 2 voos e bloqueio do quarto duplo.</p>
+        <span class="dep-amount">R$ 6.000 <small>/ 2 pessoas (R$ 3.000 cada)</small></span>
+      </div>
+
+      <div class="dep-card">
+        <div class="step-n">02</div>
+        <h4>💳 Saldo Restante</h4>
+        <p>R$ 21.000 restante pago em parcelas flexíveis antes da partida. Aceitamos cartão de crédito, Pix e transferência.</p>
+        <span class="dep-amount">R$ 21.000 <small>/ parcelado</small></span>
+      </div>
+
+    </div>
+
+    <div style="margin-top:2rem;padding:1.6rem;background:rgba(232,183,64,.06);border:1px solid rgba(232,183,64,.2);border-radius:4px;">
+      <p style="font-size:.88rem;color:var(--muted);text-align:center;line-height:1.8;">
+        💡 <strong style="color:var(--cream);">Passo 3 — Preparação Completa:</strong> Após o sinal, Fernanda entra em contato pessoalmente para orientar sobre visto, passaporte, o que levar, o que esperar — tudo o que vocês precisam para a viagem perfeita.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════ PAYMENT OPTIONS ═══════════ -->
+<section class="payment-section reveal">
+  <span class="eyebrow">💳 Formas de Pagamento</span>
+  <div class="rule"><div class="rule-dot"></div></div>
+  <h2>Pague do jeito que <em style="color:var(--gold2);font-style:italic;">funciona para vocês</em></h2>
+  <p style="color:var(--muted);margin-top:.8rem;max-width:540px;">Total flexibilidade para o saldo após o sinal de reserva. Escolham a forma mais confortável.</p>
+
+  <div class="payment-grid">
+
+    <div class="pay-card">
+      <span class="pay-icon">💳</span>
+      <h4>Cartão de Crédito</h4>
+      <p>Parcelamento em <span class="pay-highlight">até 12x</span> no cartão de crédito. Ideal para dividir o saldo sem comprometer o orçamento mensal. Visa, Master, Elo.</p>
+    </div>
+
+    <div class="pay-card">
+      <span class="pay-icon">⚡</span>
+      <h4>Pix / Transferência</h4>
+      <p>Pagamento à vista ou parcelado via Pix e TED. <span class="pay-highlight">Processamento imediato</span> e confirmação instantânea da reserva.</p>
+    </div>
+
+    <div class="pay-card">
+      <span class="pay-icon">📅</span>
+      <h4>Plano Personalizado</h4>
+      <p>Fernanda cria um <span class="pay-highlight">plano de pagamento</span> sob medida para vocês — com parcelas que cabem no orçamento até a data de viagem.</p>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2.5rem;padding:1.8rem;background:var(--ink2);border:1px solid var(--border);border-radius:4px;text-align:center;">
+    <p style="font-size:.88rem;color:var(--muted);line-height:1.9;">
+      🔒 <strong style="color:var(--cream);">Pagamento 100% seguro.</strong> O sinal de R$ 6.000 (R$ 3.000 por pessoa) confirma as vagas, bloqueia os voos e reserva o quarto duplo.<br>
+      O saldo de R$ 21.000 pode ser pago em parcelas combinadas diretamente com Fernanda até a data de embarque.
+    </p>
+  </div>
+</section>
+
+
+
+
+<!-- ═══════════ WHAT'S INCLUDED ═══════════ -->
+<div class="included-section">
+  <div class="included-inner">
+    <div class="reveal" style="text-align:center;">
+      <span class="eyebrow">✈️ Tudo Incluso no Pacote Casal</span>
+      <div class="rule" style="max-width:280px;margin-left:auto;margin-right:auto;"><div class="rule-dot"></div></div>
+      <h2>Sem surpresas.<br><em style="color:var(--gold2);font-style:italic;">Tudo já está incluso.</em></h2>
+    </div>
+    <div class="inc-grid reveal">
+      <div class="inc-item"><span class="icon">✈️</span><h4>2 Voos BR ↔ Índia</h4><p>Passagens internacionais para os dois incluídas no pacote.</p></div>
+      <div class="inc-item"><span class="icon">🛂</span><h4>Assistência de Visto</h4><p>Suporte completo para obtenção dos vistos indianos.</p></div>
+      <div class="inc-item"><span class="icon">🏨</span><h4>Quarto Duplo</h4><p>Hotéis 4★ com quarto privativo de casal em todas as cidades.</p></div>
+      <div class="inc-item"><span class="icon">☕</span><h4>Café da Manhã</h4><p>Buffet completo incluso em todos os dias da hospedagem.</p></div>
+      <div class="inc-item"><span class="icon">🇧🇷</span><h4>Guia Fernanda</h4><p>Acompanhamento bilíngue do Brasil à Índia durante toda a viagem.</p></div>
+      <div class="inc-item"><span class="icon">🇮🇳</span><h4>Anfitrião Mohit</h4><p>Coordenação, segurança e imersão cultural local autêntica.</p></div>
+      <div class="inc-item"><span class="icon">🚐</span><h4>Transporte AC</h4><p>Veículo climatizado privativo com água e lanches a bordo.</p></div>
+      <div class="inc-item"><span class="icon">🎟️</span><h4>Todos os Ingressos</h4><p>Taj Mahal, fortes, templos e monumentos — todos incluídos.</p></div>
+      <div class="inc-item"><span class="icon">🪔</span><h4>Noite Diwali</h4><p>Celebração especial do Festival das Luzes no Chokhi Dhani.</p></div>
+      <div class="inc-item"><span class="icon">🍛</span><h4>Jantar Rajastanês</h4><p>Banquete tradicional completo no Chokhi Dhani incluso.</p></div>
+      <div class="inc-item"><span class="icon">📸</span><h4>Fotos do Casal</h4><p>Sessão fotográfica profissional nos pontos mais icônicos.</p></div>
+      <div class="inc-item"><span class="icon">🎁</span><h4>Kit Boas-Vindas Casal</h4><p>Kit especial de viagem personalizado para os dois.</p></div>
+      <div class="inc-item"><span class="icon">🛡️</span><h4>Suporte 24h</h4><p>Assistência completa online e presencial em toda a viagem.</p></div>
+      <div class="inc-item"><span class="icon">🏛️</span><h4>Visitas Guiadas</h4><p>Tours com guias especializados em cada destino do roteiro.</p></div>
+      <div class="inc-item"><span class="icon">🐪</span><h4>Atividades Chokhi Dhani</h4><p>Passeio de camelo, elefante e atrações culturais inclusas.</p></div>
+      <div class="inc-item"><span class="icon">🚖</span><h4>Transfers Aeroporto</h4><p>Transfers de chegada e partida incluso nos dois sentidos.</p></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════ FINAL CTA ═══════════ -->
+<div class="cta-section">
+  <div class="cta-bg-img"></div>
+  <div class="cta-inner reveal">
+    <div class="cta-diyas">
+      <div class="cta-diya" style="--d:0s"></div>
+      <div class="cta-diya" style="--d:.2s"></div>
+      <div class="cta-diya" style="--d:.4s"></div>
+      <div class="cta-diya" style="--d:.6s"></div>
+      <div class="cta-diya" style="--d:.8s"></div>
+    </div>
+
+    <span class="eyebrow" style="display:block;margin-bottom:1rem;">🌟 Hora de Decidir</span>
+    <h2>Vivam o Diwali<br><em style="color:var(--gold2);font-style:italic;">juntos para sempre</em></h2>
+    <p>R$ 27.000 para os dois. Quarto duplo. Voos incluídos. R$ 4.000 de desconto esperando por vocês. Mas só por 5 dias.</p>
+
+    <div style="background:rgba(192,57,43,.1);border:1px solid rgba(192,57,43,.3);border-radius:4px;padding:1.2rem 1.6rem;margin:1.5rem 0;display:inline-block;">
+      <p style="color:#e74c3c;font-weight:700;font-size:.88rem;letter-spacing:.05em;">
+        ⚠️ Outra reserva em andamento para estas vagas.<br>
+        O casal que confirmar primeiro fica com o desconto.
+      </p>
+    </div>
+
+    <div class="cta-btns">
+      <a href="https://wa.me/5511947727979?text=Ol%C3%A1%20Fernanda!%20Vi%20a%20proposta%20especial%20para%20casal%20—%20%C3%8Dndia%20Diwali%202026.%20Queremos%20garantir%20nossas%20vagas!" target="_blank" class="btn btn-wa" style="font-size:.88rem;padding:1rem 2.5rem;">
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Confirmar Nossa Reserva no WhatsApp
+      </a>
+      <a href="https://wa.me/5511947727979?text=Ol%C3%A1!%20Tenho%20d%C3%BAvidas%20sobre%20a%20proposta%20casal%20India%20Diwali%202026" target="_blank" class="btn" style="font-size:.88rem;background:transparent;border:1px solid rgba(240,230,208,.3);">
+        Tirar Dúvidas Primeiro
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <span class="footer-logo">Roteiros India</span>
+  <p><strong>Fernanda Almeida Silva</strong> · +55 11 94772-7979</p>
+  <p><strong>Mohit</strong> (Índia) · +91 98725 67925</p>
+  <p style="margin-top:1rem;">Índia · Festival das Luzes · Diwali 2026 · 1–10 de Novembro</p>
+  <p>Proposta Especial Casal · R$ 27.000 · Válida por 5 dias · Sinal R$ 6.000</p>
+  <p style="margin-top:1rem;">© 2026 Roteiros India · Uma experiência exclusiva para brasileiros 🇧🇷🇮🇳</p>
+</footer>
+
+<script>
+// ── COUNTDOWN TIMER (5 days from load) ──
+(function() {
+  var stored = localStorage.getItem('diwali_proposal_deadline');
+  var deadline;
+  if (stored) {
+    deadline = new Date(parseInt(stored));
+  } else {
+    deadline = new Date(Date.now() + 5 * 24 * 60 * 60 * 1000);
+    try { localStorage.setItem('diwali_proposal_deadline', deadline.getTime()); } catch(e){}
+  }
+
+  function pad(n) { return n < 10 ? '0'+n : ''+n; }
+
+  function tick() {
+    var now = new Date();
+    var diff = deadline - now;
+    if (diff <= 0) {
+      document.getElementById('t-days').textContent = '00';
+      document.getElementById('t-hours').textContent = '00';
+      document.getElementById('t-mins').textContent = '00';
+      document.getElementById('t-secs').textContent = '00';
+      return;
+    }
+    var days  = Math.floor(diff / (1000*60*60*24));
+    var hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    var mins  = Math.floor((diff % (1000*60*60)) / (1000*60));
+    var secs  = Math.floor((diff % (1000*60)) / 1000);
+    document.getElementById('t-days').textContent  = pad(days);
+    document.getElementById('t-hours').textContent = pad(hours);
+    document.getElementById('t-mins').textContent  = pad(mins);
+    document.getElementById('t-secs').textContent  = pad(secs);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+
+// ── SCROLL REVEAL ──
+var obs = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(function(el) { obs.observe(el); });
+</script>
+
+</body>
+</html>
